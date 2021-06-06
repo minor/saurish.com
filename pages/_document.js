@@ -38,6 +38,12 @@ class MyDocument extends Document {
           />
           <meta content="#ffffff" name="theme-color" />
           <meta content="#ffffff" name="msapplication-TileColor" />
+          <script
+            async
+            defer
+            src="https://aurora.saurish.com/aurora.js"
+            aurora-id="2cd16199347a13543b0d1772d3280520"
+          ></script>
         </Head>
         <body className="text-white bg-white dark:bg-black dark:text-black">
           <Main />
