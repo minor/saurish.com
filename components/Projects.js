@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 const ExternalLink = ({ href, children }) => (
   <a
@@ -22,8 +22,8 @@ const Project = ({ image, glink, link, title, description, index }) => {
         alt={title}
         className={
           index
-            ? "w-full rounded shadow-xl md:w-6/12"
-            : "w-full rounded shadow-xl md:w-6/12 md:order-1"
+            ? 'w-full rounded shadow-xl md:w-6/12'
+            : 'w-full rounded shadow-xl md:w-6/12 md:order-1'
         }
       />
       <div className="flex flex-col w-full mx-1 mt-3 mb-1 space-y-3 overflow-auto md:w-5/12 ">
@@ -79,7 +79,7 @@ const FullProjects = () => (
   <>
     <Project
       image="/images/contact-tracing"
-      glink="https://github.com/minor/envisionnew.org/"
+      glink="hhttps://github.com/minor/saurish.com/blob/main/public/papers/contact-tracing.pdf"
       link="https://saurish.com/papers/contact-tracing.pdf"
       title="Digital Contact Tracing: Ethicality and Reinforced Surveillance"
       index={false}
@@ -114,7 +114,7 @@ export default function Projects() {
       />
       <Project
         image="/images/crispr"
-        glink="https://github.com/saurish.com/envisionnew.org/"
+        glink="https://github.com/minor/saurish.com/blob/main/public/papers/crispr.pdf"
         link="https://saurish.com/papers/crispr.pdf/"
         title="CRISPR-CAS9 and Gene Editing: An Ethical Consideration"
         index={true}
