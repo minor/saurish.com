@@ -33,5 +33,7 @@ Create a `.env.local` file similar to `.env.example`.
 Let me know if you do end up using anything from here – would be neat to know!
 
 Email - [me@saurish.com](mailto:me@saurish.com)
+
 Twitter - [@saurishhh](https://twitter.com/saurishhh)
+
 Project Link: [https://github.com/minor/saurish.com](https://github.com/minor/saurish.com)
