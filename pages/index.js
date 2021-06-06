@@ -67,7 +67,7 @@ export default function Home() {
           interested in computer science and computational biology.
         </p>
 
-        <div className="flex flex-row flex-wrap justify-center mb-10 space-x-4 text-center bg-white gap-y-4 dark:bg-black">
+        <div className="flex flex-row flex-wrap justify-center m-2 mb-10 space-x-4 text-center bg-white md:mb-10 md:m-0 gap-y-4 dark:bg-black">
           <Link href="/#projects">
             <a className="px-2.5 py-1 text-lg text-gray-700 border hover:shadow-md border-gray-400 bg-transparent dark:hover:bg-gray-custom transition duration-200 rounded dark:text-gray-300 dark:border-gray-custom">
               Projects
@@ -109,9 +109,9 @@ export default function Home() {
           </div>
           <div className="max-w-2xl">
             <p className="mx-4 mb-6 text-center text-gray-700 md:mx-0 dark:text-gray-400">
-              I've mostly pursued independent projects, ocassionally dabling
-              with freelance work. These are some of the most notable projects
-              that I have, as well as some of the papers that I have written.
+              I've mostly pursued independent projects, ocassionally working as
+              a freelancer. These are some of the most notable projects that I
+              have, as well as some of the papers that I have written.
             </p>
             <div className="mx-8 my-5 space-y-14 md:mx-0">
               <Projects />
