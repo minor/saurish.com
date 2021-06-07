@@ -51,7 +51,7 @@ export default function Home() {
         />
       </Head>
       <div className="flex flex-col items-center justify-center text-center bg-white dark:bg-black">
-        <h1 className="max-w-2xl mt-20 mb-8 text-4xl font-bold text-black md:mb-10 md:text-6xl dark:text-white">
+        <h1 className="max-w-2xl mt-20 mb-8 text-4xl font-bold text-black md:mb-10 md:text-6xl font-manrope dark:text-white">
           Hey, I'm Saurish.
         </h1>
         <p className="max-w-2xl mx-4 mb-8 text-xl text-gray-800 md:mx-0 dark:text-gray-400">
