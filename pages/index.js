@@ -166,11 +166,10 @@ export default function Home() {
               </a>
               .
             </p>
-            <div className="mx-8 my-5 space-y-14 md:mx-0"></div>
           </div>
         </section>
+        <Footer />
       </div>
-      <Footer />
     </>
   );
 }
