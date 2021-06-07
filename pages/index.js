@@ -168,6 +168,8 @@ export default function Home() {
             </p>
           </div>
         </section>
+      </div>
+      <div className="px-8">
         <Footer />
       </div>
     </>

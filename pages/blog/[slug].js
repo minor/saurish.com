@@ -128,44 +128,42 @@ export default function Post({ page, blocks }) {
     '**.png?theme=light&md=1&fontSize=100px&images=https%3A%2F%2Fsaurish.com%2Flogos%2Flogo-dark.jpg';
 
   return (
-    <div>
-      <Layout
-        title={page.properties.Name.title[0].plain_text}
-        description={page.properties.Description.rich_text[0].plain_text}
-        date={new Date(page.properties.Date.date.start)}
-        image={imageLink}
-        type="article"
-      >
-        <article className="flex flex-col items-start justify-center w-full max-w-2xl mx-auto mb-16">
-          <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
-            {page.properties.Name.title[0].plain_text}
-          </h1>
-          <div className="flex flex-col items-start justify-between w-full mt-2 mb-10 md:flex-row md:items-center">
-            <div className="flex items-center">
-              <p className="text-sm text-gray-700 dark:text-gray-300">
-                {'Saurish Srivastava / '}
-                {new Date(page.properties.Date.date.start).toLocaleString(
-                  'en-US',
-                  {
-                    month: 'long',
-                    day: '2-digit',
-                    year: 'numeric'
-                  }
-                )}
-              </p>
-            </div>
-            <p className="mt-2 text-sm text-gray-600 dark:text-gray-400 min-w-32 md:mt-0">
-              {page.properties.ReadTime.rich_text[0].plain_text} minutes
+    <Layout
+      title={page.properties.Name.title[0].plain_text}
+      description={page.properties.Description.rich_text[0].plain_text}
+      date={new Date(page.properties.Date.date.start)}
+      image={imageLink}
+      type="article"
+    >
+      <article className="flex flex-col items-start justify-center w-full max-w-2xl mx-auto mb-16">
+        <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
+          {page.properties.Name.title[0].plain_text}
+        </h1>
+        <div className="flex flex-col items-start justify-between w-full mt-2 mb-10 md:flex-row md:items-center">
+          <div className="flex items-center">
+            <p className="text-sm text-gray-700 dark:text-gray-300">
+              {'Saurish Srivastava / '}
+              {new Date(page.properties.Date.date.start).toLocaleString(
+                'en-US',
+                {
+                  month: 'long',
+                  day: '2-digit',
+                  year: 'numeric'
+                }
+              )}
             </p>
           </div>
-          <div className="w-full leading-relaxed prose dark:prose-dark max-w-none">
-            {blocks.map((block) => (
-              <Fragment key={block.id}>{renderBlock(block)}</Fragment>
-            ))}
-          </div>
-        </article>
-      </Layout>
-    </div>
+          <p className="mt-2 text-sm text-gray-600 dark:text-gray-400 min-w-32 md:mt-0">
+            {page.properties.ReadTime.rich_text[0].plain_text} minutes
+          </p>
+        </div>
+        <div className="w-full leading-relaxed prose dark:prose-dark max-w-none">
+          {blocks.map((block) => (
+            <Fragment key={block.id}>{renderBlock(block)}</Fragment>
+          ))}
+        </div>
+      </article>
+    </Layout>
   );
 }
 

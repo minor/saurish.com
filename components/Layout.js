@@ -1,10 +1,10 @@
-import { useState, useEffect } from "react";
-import { useTheme } from "next-themes";
-import Link from "next/link";
-import Head from "next/head";
-import { useRouter } from "next/router";
+import { useState, useEffect } from 'react';
+import { useTheme } from 'next-themes';
+import Link from 'next/link';
+import Head from 'next/head';
+import { useRouter } from 'next/router';
 
-import Footer from "./Footer";
+import Footer from './Footer';
 
 export default function Layout(props) {
   const [mounted, setMounted] = useState(false);
@@ -15,11 +15,11 @@ export default function Layout(props) {
   const router = useRouter();
   const { children, ...customMeta } = props;
   const meta = {
-    title: "Saurish Srivastava – Student, researcher, leader.",
+    title: 'Saurish Srivastava – Student, researcher, leader.',
     description: `High school junior interested in computer science, biology, and making a difference.`,
-    image: "https://saurish.com/static/favicons/send.png",
-    type: "website",
-    ...customMeta,
+    image: 'https://saurish.com/static/favicons/send.png',
+    type: 'website',
+    ...customMeta
   };
 
   return (
