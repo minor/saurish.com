@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import { useState, useEffect } from 'react';
-import { useTheme } from 'next-themes';
-import NowPlaying from '../components/NowPlaying';
+import Link from "next/link";
+import { useState, useEffect } from "react";
+import { useTheme } from "next-themes";
+import NowPlaying from "../components/NowPlaying";
 
 const ExternalLink = ({ href, children }) => (
   <a
@@ -30,12 +30,12 @@ export default function Footer() {
   if (!mounted) return null;
 
   return (
-    <footer className="flex flex-col items-center max-w-2xl">
+    <footer className="flex flex-col items-center">
       <button
         aria-label="Toggle Dark Mode"
         type="button"
         className="w-10 h-10 p-3 bg-gray-200 rounded dark:bg-gray-800"
-        onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+        onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       >
         {mounted && (
           <svg
@@ -45,7 +45,7 @@ export default function Footer() {
             stroke="currentColor"
             className="w-4 h-4 text-gray-800 dark:text-gray-200"
           >
-            {theme === 'dark' ? (
+            {theme === "dark" ? (
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
