@@ -51,8 +51,8 @@ export default function Home() {
         />
       </Head>
       <div className="flex flex-col items-center justify-center text-center bg-white dark:bg-black">
-        <h1 className="max-w-2xl mt-20 mb-8 text-4xl font-bold text-black md:mb-10 md:text-6xl dark:text-white">
-          Hey, I'm Saurish.
+        <h1 className="max-w-2xl mt-20 mb-8 text-4xl font-bold text-black md:mb-10 md:text-5xl dark:text-white">
+          Hey, I'm Saurish Srivastava.
         </h1>
         <p className="max-w-2xl mx-4 mb-8 text-xl text-gray-800 md:mx-0 dark:text-gray-400">
           I’m a junior at{' '}
@@ -78,6 +78,16 @@ export default function Home() {
               Skills
             </a>
           </Link>
+          <Link href="/#connect">
+            <a className="px-2.5 py-1 text-lg text-gray-700 border hover:shadow-md border-gray-400 bg-transparent dark:hover:bg-gray-custom transition duration-200 rounded dark:text-gray-300 dark:border-gray-custom">
+              Connect
+            </a>
+          </Link>
+          <Link href="/about">
+            <a className="px-2.5 py-1 text-lg text-gray-700 border hover:shadow-md border-gray-400 bg-transparent dark:hover:bg-gray-custom transition duration-200 rounded dark:text-gray-300 dark:border-gray-custom">
+              About
+            </a>
+          </Link>
           <Link href="/statistics">
             <a className="px-2.5 py-1 text-lg text-gray-700 border hover:shadow-md border-gray-400 bg-transparent dark:hover:bg-gray-custom transition duration-200 rounded dark:text-gray-300 dark:border-gray-custom">
               Statistics
@@ -86,11 +96,6 @@ export default function Home() {
           <Link href="/blog">
             <a className="px-2.5 py-1 text-lg text-gray-700 border hover:shadow-md border-gray-400 bg-transparent dark:hover:bg-gray-custom transition duration-200 rounded dark:text-gray-300 dark:border-gray-custom">
               Blog
-            </a>
-          </Link>
-          <Link href="/#connect">
-            <a className="px-2.5 py-1 text-lg text-gray-700 border hover:shadow-md border-gray-400 bg-transparent dark:hover:bg-gray-custom transition duration-200 rounded dark:text-gray-300 dark:border-gray-custom">
-              Connect
             </a>
           </Link>
         </div>
