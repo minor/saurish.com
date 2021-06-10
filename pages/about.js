@@ -7,58 +7,40 @@ export default function About() {
       description="A little bit more information about who I am and what I do."
     >
       <div className="flex flex-col items-center justify-center max-w-4xl mx-auto mb-16">
-        <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
-          About Me
+        <h1 className="mb-4 text-4xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
+          About
         </h1>
         <br />
         <div className="max-w-2xl">
           <p className="mx-4 mb-6 text-left text-gray-700 md:mx-0 dark:text-gray-400">
-            Hello there! I’m <span className="font-bold">Saurish</span>, a
-            sophomore at{' '}
+            Hey there! I'm Saurish Srivastava. I'm a junior at{' '}
             <a
-              href="https://evhs.schoolloop.com"
-              target="_blank"
+              href="https://evhs.schoolloop.com/"
               className="underline text-link-blue dark:text-link-purple"
+              target="_blank"
               rel="noopener noreferrer"
             >
               Evergreen Valley High School
             </a>
-            . I love coding and enjoy messing around in different areas of
-            computer science! I'm currently exploring different portions of{' '}
-            <span className="font-bold">bioinformatics</span>, ranging from
-            medical computer vision to genome sequencing. I also really like
-            taking{' '}
-            <span aria-label="Camera" role="img">
-              📸
-            </span>{' '}
-            (model and nature), which you can find on my{' '}
+            , located in the capital of the Silicon Valley: San Jose. I love
+            coding and messing around in different fields of computer science. I
+            love coding and enjoy messing around in different areas of computer
+            science! I'm currently exploring bioinformatics – ranging from
+            medical computer vision to genome sequencing – to understand the
+            intersection of biology and computer science.
+            <br />
+            <br />
+            I'm a hobbyist photographer (mostly nature). You can see some of my
+            shots on my{' '}
             <a
               href="https://unsplash.com/@saurishs/"
-              target="_blank"
               className="underline text-link-blue dark:text-link-purple"
+              target="_blank"
               rel="noopener noreferrer"
             >
               Unsplash page
             </a>
             .
-            <br />
-            <br />
-            I’m the president and executive director at{' '}
-            <a
-              href="https://envisionnew.org/"
-              target="_blank"
-              className="underline text-link-blue dark:text-link-purple"
-              rel="noopener noreferrer"
-            >
-              Project enVision U.S.
-            </a>
-            , a non-profit organization dedicated to the{' '}
-            <span className="font-bold">community</span>. Our mission is to
-            create a connected community where education is free and accessible.
-            With COVID-19 removing most in-person contact, we've been committed
-            to helping students from different communities through{' '}
-            <span className="font-bold">online services</span>. I'm in charge of
-            leading all active projects, managing the team, and teaching!
             <br />
             <br />
             I'm also an avid debater! I participate in Varsity Lincoln Douglas
@@ -71,16 +53,24 @@ export default function About() {
             >
               arguments
             </a>
-            . If you have any questions, feel free to{' '}
+            . I mostly engage in critical literature and philosophical bases.
+            <br />
+            <br />
+            I’m the president and executive director at{' '}
             <a
-              href="mailto:me@saurish.com?subject=Hello%20from%20the%20Website!"
+              href="https://envisionnew.org/"
               target="_blank"
               className="underline text-link-blue dark:text-link-purple"
               rel="noopener noreferrer"
             >
-              contact me
+              Project enVision U.S.
             </a>
-            .
+            , a non-profit organization dedicated to the community. Our mission
+            is to create a connected community where education is free and
+            accessible. With COVID-19 removing most in-person contact, we've
+            been committed to helping students from different communities
+            through online services. I'm in charge of leading all active
+            projects, managing the team, and teaching!
           </p>
         </div>
       </div>

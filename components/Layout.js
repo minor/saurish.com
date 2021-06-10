@@ -50,7 +50,7 @@ export default function Layout(props) {
           <meta property="article:published_time" content={meta.date} />
         )}
       </Head>
-      <nav className="flex items-center justify-between w-full max-w-4xl px-8 py-4 mx-auto my-0 text-gray-900 bg-white sticky-nav md:my-8 dark:bg-black bg-opacity-60 dark:text-gray-100">
+      <nav className="flex items-center justify-between w-full max-w-4xl px-8 py-8 mx-auto mb-4 text-gray-900 bg-white md:py-2 sticky-nav md:mt-8 dark:bg-black bg-opacity-60 dark:text-gray-100">
         <a href="#skip" className="skip-nav">
           Skip to content
         </a>
@@ -63,6 +63,11 @@ export default function Layout(props) {
           <Link href="/">
             <a className="p-1 text-gray-900 sm:p-4 dark:text-gray-100 hover:text-gray-500 dark:hover:text-gray-500">
               Home
+            </a>
+          </Link>
+          <Link href="/about">
+            <a className="p-1 text-gray-900 sm:p-4 dark:text-gray-100 hover:text-gray-500 dark:hover:text-gray-500">
+              About
             </a>
           </Link>
           <Link href="/statistics">
