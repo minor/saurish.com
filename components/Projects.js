@@ -113,12 +113,12 @@ export default function Projects() {
         description="This website was a theoretical project for school with no firm plans. I utilized it to exhibit my designing skills. If you are interested in reaching out to an organization that is dedicated to promoting neurodiversity, please check out Ataraxia from Project enVision U.S."
       />
       <Project
-        image="/images/crispr"
-        glink="https://github.com/minor/saurish.com/blob/main/public/papers/crispr.pdf"
-        link="https://saurish.com/papers/crispr.pdf/"
-        title="CRISPR-CAS9 and Gene Editing: An Ethical Consideration"
+        image="/images/plutonium"
+        glink="https://github.com/minor/plutonium/"
+        link="https://plutonium.saurish.com"
+        title="Plutonium"
         index={true}
-        description="I wrote this paper in the Spring of 2021, as a part of the Philosophy Department at Evergreen Valley College. I go in-depth about the particular stances revolving gene editing and the usage of CRISPR-CAS9 technologies."
+        description="Plutonium is a free template for businesses built with Next.js 11 and styled with TailwindCSS. It comes with built in dark-mode support & blazing fast speeds."
       />
       {isShowingFullProjects ? (
         <FullProjects />

@@ -9,15 +9,15 @@ export default function Connect() {
       formData[field.name] = field.value;
     });
 
-    await fetch("/api/connect", {
-      method: "POST",
-      body: JSON.stringify(formData),
+    await fetch('/api/connect', {
+      method: 'POST',
+      body: JSON.stringify(formData)
     }).then((res) => {
-      console.log("Message has been received.");
+      console.log('Message has been received.');
 
       if (res.status === 429) {
         alert(
-          "Too many requests – please wait 15 more minutes before sending new mail!"
+          'Too many requests – please wait 15 more minutes before sending new mail!'
         );
       }
 
@@ -25,7 +25,7 @@ export default function Connect() {
         alert(
           "Message has successfully sent – I'll get back to you as soon as I can!"
         );
-        console.log("Message has successfully been sent!");
+        console.log('Message has successfully been sent!');
       }
     });
   }

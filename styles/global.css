@@ -72,14 +72,6 @@ body::-webkit-scrollbar-thumb {
   outline: 1px solid rgb(33, 34, 34);
 }
 
-.sticky-navbar {
-  position: sticky;
-  z-index: 10;
-  top: 0;
-  backdrop-filter: saturate(180%) blur(40px);
-  transition: background-color 0.1 ease-in-out;
-}
-
 .color-gradient {
   -webkit-background-clip: text;
   background-clip: text;
