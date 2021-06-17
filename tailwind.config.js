@@ -11,7 +11,7 @@ module.exports = {
         manrope: 'Manrope'
       },
       spacing: {
-        '.75': '0.1875rem'
+        0.75: '0.1875rem'
       },
       colors: {
         'link-blue': '#3B719F',

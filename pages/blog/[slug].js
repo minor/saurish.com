@@ -20,7 +20,7 @@ export const Text = ({ text }) => {
         className={[
           bold ? 'font-bold' : '',
           code
-            ? 'text-gray-800 dark:text-gray-200 px-1 py-0.75 border border-gray-100 dark:border-gray-800 rounded-md bg-gray-100 dark:bg-gray-900'
+            ? 'text-purple-500 dark:text-purple-400 px-1 py-0.75 border border-gray-200 dark:border-gray-800 rounded-md bg-gray-100 dark:bg-gray-900'
             : '',
           italic ? 'italic' : '',
           strikethrough ? 'line-through' : '',
@@ -58,19 +58,19 @@ const renderBlock = (block) => {
       );
     case 'heading_1':
       return (
-        <h1 className="my-2 mb-4 text-3xl font-bold leading-relaxed text-black md:text-4xl dark:text-white">
+        <h1 className="my-4 text-3xl font-bold leading-relaxed text-black md:text-4xl dark:text-white">
           <Text text={value.text} />
         </h1>
       );
     case 'heading_2':
       return (
-        <h2 className="my-2 mb-4 text-xl font-bold leading-relaxed text-black dark:text-white md:text-2xl">
+        <h2 className="my-4 text-xl font-bold leading-relaxed text-black dark:text-white md:text-2xl">
           <Text text={value.text} />
         </h2>
       );
     case 'heading_3':
       return (
-        <h3 className="my-2 mb-4 text-lg font-bold leading-relaxed text-black dark:text-white md:text-xl">
+        <h3 className="my-4 text-lg font-bold leading-relaxed text-black dark:text-white md:text-xl">
           <Text text={value.text} />
         </h3>
       );
@@ -85,24 +85,23 @@ const renderBlock = (block) => {
       return (
         <div>
           <label htmlFor={id}>
-            <input
-              type="checkbox"
-              id={id}
-              defaultChecked={value.checked}
-              className="leading-relaxed text-gray-700 dark:text-gray-300"
-            />{' '}
-            <Text text={value.text} />
+            <input type="checkbox" id={id} defaultChecked={value.checked} />{' '}
+            <span className="ml-2 leading-relaxed text-gray-700 dark:text-gray-300">
+              <Text text={value.text} />
+            </span>
           </label>
         </div>
       );
     case 'toggle':
       return (
         <details>
-          <summary className="cursor-pointer">{text[0].text.content}</summary>
+          <summary className="leading-relaxed text-gray-700 cursor-pointer dark:text-gray-300">
+            <Text text={value.text} />
+          </summary>
           {value.children?.map((block) => (
-            <Fragment className="leading-relaxed" key={block.id}>
-              {renderBlock(block)}
-            </Fragment>
+            <span className="leading-relaxed text-gray-700 dark:text-gray-300">
+              <Fragment key={block.id}>{renderBlock(block)}</Fragment>
+            </span>
           ))}
         </details>
       );
