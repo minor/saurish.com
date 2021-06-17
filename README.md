@@ -2,6 +2,7 @@
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fminor%2Fsaurish.com)
 
+
 ![Home Page](/.github/home.png?raw=true 'Home Page')
 
 Hey, there! This is my current portfolio, available at: [https://saurish.com](https://saurish.com).
