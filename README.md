@@ -1,6 +1,10 @@
 ## My Personal Slice of the Web
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fminor%2Fsaurish.com)
+<div style="text-align:center">
+  <a href="https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fminor%2Fsaurish.com" target="_blank">
+    <img src="https://vercel.com/button" alt="Deploy with Vercel" />
+  </a>
+</div>
 
 ![Home Page](/.github/home.png?raw=true 'Home Page')
 
