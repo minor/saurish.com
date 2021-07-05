@@ -100,7 +100,7 @@ export default function Projects() {
         title="Project enVision U.S."
         index={true}
         description="I'm the President of Project enVision U.S., a 501(c)(3) non-profit
-          organization dedicated to increasing the accessbility of education
+          organization dedicated to increasing the accessibility of education
           within our community. We're building a network of volunteers dedicated
           to their community."
       />
