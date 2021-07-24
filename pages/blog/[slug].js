@@ -4,6 +4,12 @@ import { databaseId } from './index.js';
 import { v4 as uuid } from 'uuid';
 import Layout from '../../components/Layout';
 
+const postImageSource = [
+  'images.unsplash.com',
+  'res.cloudinary.com',
+  'dl.dropboxusercontent.com'
+];
+
 export const Text = ({ text }) => {
   if (!text) {
     return null;

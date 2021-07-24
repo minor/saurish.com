@@ -17,8 +17,8 @@ export default function Home({ posts }) {
           Blog
         </h1>
         <br />
-        <div className="max-w-2xl">
-          <p className="mx-4 mb-12 text-center text-gray-700 md:mx-0 dark:text-gray-400">
+        <div className="max-w-2xl md:max-w-3xl">
+          <p className="mx-4 mb-12 text-lg text-center text-gray-700 md:mx-0 dark:text-gray-400">
             These are some of my thoughts on some cool and important topics, as
             well as some tutorials. All the content is hosted in Notion{' '}
             <a

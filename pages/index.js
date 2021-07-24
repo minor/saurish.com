@@ -113,7 +113,7 @@ export default function Home() {
             </h1>
           </div>
           <div className="max-w-2xl md:max-w-3xl">
-            <p className="mx-4 mb-12 text-center text-gray-700 md:mx-0 dark:text-gray-400">
+            <p className="mx-4 mb-12 text-lg text-center text-gray-700 md:mx-0 dark:text-gray-400">
               I've mostly pursued independent projects, although I have
               previously worked as a freelancer. These are some of my most
               notable projects.
@@ -136,7 +136,7 @@ export default function Home() {
             </h1>
           </div>
           <div className="max-w-2xl md:max-w-3xl">
-            <p className="mx-4 mb-12 text-center text-gray-700 md:mx-0 dark:text-gray-400">
+            <p className="mx-4 mb-12 text-lg text-center text-gray-700 md:mx-0 dark:text-gray-400">
               I love web development & also love dabbling with random scripts
               and machine learning models with Python and MATLAB – it's quite
               fun, you should try it.
@@ -158,7 +158,7 @@ export default function Home() {
           </div>
           <div className="max-w-2xl md:max-w-2xl">
             <Connect />
-            <p className="mx-4 mb-12 text-center text-gray-700 md:mx-0 dark:text-gray-400">
+            <p className="mx-4 mb-12 text-lg text-center text-gray-700 md:mx-0 dark:text-gray-400">
               If you want to get in touch with me directly, please send an email
               to{' '}
               <a
