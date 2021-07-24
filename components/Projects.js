@@ -78,12 +78,12 @@ const Project = ({ image, glink, link, title, description, index }) => {
 const FullProjects = () => (
   <>
     <Project
-      image="/images/contact-tracing"
-      glink="hhttps://github.com/minor/saurish.com/blob/main/public/papers/contact-tracing.pdf"
-      link="https://saurish.com/papers/contact-tracing.pdf"
-      title="Digital Contact Tracing: Ethicality and Reinforced Surveillance"
+      image="/images/c2cmha"
+      glink="https://github.com/minor/english-project"
+      link="https://c2cmha.vercel.app/"
+      title="Coast-to-Coast Mental Health Awareness"
       index={false}
-      description="I wrote this paper – independently – in the Fall of 2020. Here, I use the works of Franco Berardi and other scholars in the field of semio-capitalism as lens for evaluating the ethicality of digital contact tracing & how it can potentially be used as a mode of surviellance."
+      description="This website was a theoretical project for school with no firm plans. I utilized it to exhibit my designing skills. If you are interested in reaching out to an organization that is dedicated to promoting neurodiversity, please check out Ataraxia from Project enVision U.S."
     />
   </>
 );
@@ -105,12 +105,15 @@ export default function Projects() {
           to their community."
       />
       <Project
-        image="/images/c2cmha"
-        glink="https://github.com/minor/english-project"
-        link="https://c2cmha.vercel.app/"
-        title="Coast-to-Coast Mental Health Awareness"
+        image="/images/ataraxia"
+        glink="https://github.com/envisionnew/ataraxia.envisionnew.org/"
+        link="https://ataraxia.envisionnew.org/"
+        title="Ataraxia"
         index={false}
-        description="This website was a theoretical project for school with no firm plans. I utilized it to exhibit my designing skills. If you are interested in reaching out to an organization that is dedicated to promoting neurodiversity, please check out Ataraxia from Project enVision U.S."
+        description="I'm the co-founder and director of operations of Ataraxia, a
+         non-profit organization incubated by Project enVision U.S. We are dedicated
+         to providing adequate digital resources to promote neurodiversity within our
+         communities, while materially impacting the mental health of underserved populations."
       />
       <Project
         image="/images/plutonium"

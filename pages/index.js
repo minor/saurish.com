@@ -68,6 +68,11 @@ export default function Home() {
         </p>
 
         <div className="flex flex-row flex-wrap justify-center m-2 mb-10 space-x-4 text-center bg-white md:mb-10 md:m-0 gap-y-4 dark:bg-black">
+          <Link href="/about">
+            <a className="px-2.5 py-1 text-lg text-gray-700 border hover:shadow-md border-gray-400 bg-transparent dark:hover:bg-gray-custom transition duration-200 rounded dark:text-gray-300 dark:border-gray-custom">
+              About
+            </a>
+          </Link>
           <Link href="/#projects">
             <a className="px-2.5 py-1 text-lg text-gray-700 border hover:shadow-md border-gray-400 bg-transparent dark:hover:bg-gray-custom transition duration-200 rounded dark:text-gray-300 dark:border-gray-custom">
               Projects
@@ -76,16 +81,6 @@ export default function Home() {
           <Link href="/#skills">
             <a className="px-2.5 py-1 text-lg text-gray-700 border hover:shadow-md border-gray-400 bg-transparent dark:hover:bg-gray-custom transition duration-200 rounded dark:text-gray-300 dark:border-gray-custom">
               Skills
-            </a>
-          </Link>
-          <Link href="/#connect">
-            <a className="px-2.5 py-1 text-lg text-gray-700 border hover:shadow-md border-gray-400 bg-transparent dark:hover:bg-gray-custom transition duration-200 rounded dark:text-gray-300 dark:border-gray-custom">
-              Connect
-            </a>
-          </Link>
-          <Link href="/about">
-            <a className="px-2.5 py-1 text-lg text-gray-700 border hover:shadow-md border-gray-400 bg-transparent dark:hover:bg-gray-custom transition duration-200 rounded dark:text-gray-300 dark:border-gray-custom">
-              About
             </a>
           </Link>
           <Link href="/statistics">
@@ -98,8 +93,13 @@ export default function Home() {
               Blog
             </a>
           </Link>
+          <Link href="/#connect">
+            <a className="px-2.5 py-1 text-lg text-gray-700 border hover:shadow-md border-gray-400 bg-transparent dark:hover:bg-gray-custom transition duration-200 rounded dark:text-gray-300 dark:border-gray-custom">
+              Connect
+            </a>
+          </Link>
         </div>
-        <div className="w-5/6 h-px max-w-2xl mb-10 md:w-full animate-gradient-x color-bg" />
+        <div className="w-5/6 h-px max-w-2xl mb-10 md:max-w-3xl md:w-full animate-gradient-x color-bg" />
         <section id="projects" className="mb-10">
           <div className="flex items-center justify-center mb-6">
             <div
@@ -112,11 +112,11 @@ export default function Home() {
               Projects
             </h1>
           </div>
-          <div className="max-w-2xl">
-            <p className="mx-4 mb-6 text-center text-gray-700 md:mx-0 dark:text-gray-400">
-              I've mostly pursued independent projects, ocassionally working as
-              a freelancer. These are some of the most notable projects that I
-              have, as well as some of the papers that I have written.
+          <div className="max-w-2xl md:max-w-3xl">
+            <p className="mx-4 mb-12 text-center text-gray-700 md:mx-0 dark:text-gray-400">
+              I've mostly pursued independent projects, although I have
+              previously worked as a freelancer. These are some of my most
+              notable projects.
             </p>
             <div className="mx-8 my-5 space-y-14 md:mx-0">
               <Projects />
@@ -135,8 +135,8 @@ export default function Home() {
               Skills
             </h1>
           </div>
-          <div className="max-w-2xl">
-            <p className="mx-4 mb-6 text-center text-gray-700 md:mx-0 dark:text-gray-400">
+          <div className="max-w-2xl md:max-w-3xl">
+            <p className="mx-4 mb-12 text-center text-gray-700 md:mx-0 dark:text-gray-400">
               I love web development & also love dabbling with random scripts
               and machine learning models with Python and MATLAB – it's quite
               fun, you should try it.
@@ -156,9 +156,9 @@ export default function Home() {
               Connect
             </h1>
           </div>
-          <div className="max-w-2xl">
+          <div className="max-w-2xl md:max-w-2xl">
             <Connect />
-            <p className="mx-4 mb-6 text-center text-gray-700 md:mx-0 dark:text-gray-400">
+            <p className="mx-4 mb-12 text-center text-gray-700 md:mx-0 dark:text-gray-400">
               If you want to get in touch with me directly, please send an email
               to{' '}
               <a
