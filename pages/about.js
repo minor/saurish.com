@@ -1,4 +1,5 @@
 import Layout from '../components/Layout';
+import Image from 'next/image';
 
 export default function About() {
   return (
@@ -7,12 +8,12 @@ export default function About() {
       description="A little bit more information about who I am and what I do."
     >
       <div className="flex flex-col items-center justify-center max-w-4xl mx-auto mb-16">
-        <h1 className="mb-4 text-4xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
+        <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
           About
         </h1>
         <br />
-        <div className="max-w-2xl">
-          <p className="mx-4 mb-6 text-left text-gray-700 md:mx-0 dark:text-gray-400">
+        <div className="max-w-2xl md:max-w-3xl">
+          <p className="mx-2 mb-12 text-left text-gray-700 md:mb-20 text-md md:text-lg md:mx-0 dark:text-gray-400">
             Hey there! I'm Saurish Srivastava. I'm a junior at{' '}
             <a
               href="https://evhs.schoolloop.com/"
@@ -72,6 +73,20 @@ export default function About() {
             through online services. I'm in charge of leading all active
             projects, managing the team, and teaching!
           </p>
+          <div className="mx-2 prose text-center sm:mx-auto">
+            <Image
+              src="/images/me.webp"
+              className="rounded-lg"
+              alt="An extremely blurry photo of Saurish"
+              height={1106}
+              width={914}
+            />
+            <blockquote>
+              <p className="mx-2 mt-2 text-sm text-gray-700 md:mt-4 md:text-lg md:mx-0 dark:text-gray-400">
+                Enjoy an extremely blurry photo of me
+              </p>
+            </blockquote>
+          </div>
         </div>
       </div>
     </Layout>
