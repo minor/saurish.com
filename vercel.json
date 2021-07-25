@@ -1,0 +1,33 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/fonts/inter-var-latin.woff2",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/playlists/relax",
+      "destination": "https://open.spotify.com/playlist/7gCB69sVzGZUVWxPyeQ4Ao?si=fedc2cec8ff241dd"
+    },
+    {
+      "source": "/playlists/ctc",
+      "destination": "https://open.spotify.com/playlist/3NvO5dazKEpzu3qRE0gZ6G?si=2e1bf5c2cd404752"
+    },
+    {
+      "source": "/playlists/afterimage",
+      "destination": "https://open.spotify.com/playlist/4kp1ed0dtyWWOdryOFNZ6R?si=b4afb30082414d7e"
+    },
+    {
+      "source": "/playlists/shallow",
+      "destination": "https://open.spotify.com/playlist/1MJixQZLbzzbDtHxeQ3FOs?si=7d6700fb8fba49fe"
+    }
+  ]
+}

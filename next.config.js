@@ -1,26 +1,11 @@
 module.exports = {
-  reactStrictMode: true,
-  experimental: {
-    turboMode: true,
-    eslint: true
+  future: {
+    strictPostcssConfiguration: true
   },
+  reactStrictMode: true,
   images: {
     domains: [
       'i.scdn.co' // Spotify Album Art
-    ]
-  },
-  async redirects() {
-    return [
-      {
-        source: '/playlists/relax',
-        destination: 'https://open.spotify.com/playlist/7gCB69sVzGZUVWxPyeQ4Ao?si=fedc2cec8ff241dd',
-        permanent: true,
-      },
-      {
-        source: '/playlists/ctc',
-        destination: 'https://open.spotify.com/playlist/3NvO5dazKEpzu3qRE0gZ6G?si=2e1bf5c2cd404752',
-        permanent: true,
-      },
     ]
   },
   async headers() {
