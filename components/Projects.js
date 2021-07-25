@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Image from 'next/image';
+import { theme } from '../lib/tailwind';
 
 const ExternalLink = ({ href, children }) => (
   <a
@@ -26,7 +27,7 @@ const Project = ({ image, glink, link, title, description, index }) => {
           src={`${image}.webp`}
           width="1572"
           height="983"
-          sizes="(min-width:768px) 384px, 100vw"
+          sizes={`(min-width:${theme.screens.md}) 384px, 100vw`}
           alt={title}
           layout="responsive"
         />
