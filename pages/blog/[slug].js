@@ -4,16 +4,17 @@ import { databaseId } from './index.js';
 import { v4 as uuid } from 'uuid';
 import Layout from '../../components/Layout';
 
-const postImageSource = [
+const imageSources = [
   'images.unsplash.com',
-  'res.cloudinary.com',
-  'dl.dropboxusercontent.com'
+  's3-us-west-2.amazonaws.com',
+  'imgur.com'
 ];
 
 export const Text = ({ text }) => {
   if (!text) {
     return null;
   }
+
   return text.map((value) => {
     const {
       annotations: { bold, code, color, italic, strikethrough, underline },
@@ -34,18 +35,28 @@ export const Text = ({ text }) => {
         ].join(' ')}
         style={color !== 'default' ? { color } : {}}
       >
-        {text.link ? (
-          <a
-            className="underline text-link-blue dark:text-link-purple"
-            href={text.link.url}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {text.content}
-          </a>
-        ) : (
-          text.content
-        )}
+        {text.link
+          ? [
+              imageSources.some((u) => text.link.url.includes(u)) ? (
+                <div className="mx-4">
+                  <img
+                    src={text.link.url}
+                    alt={text.content}
+                    className="w-full rounded-md"
+                  />
+                </div>
+              ) : (
+                <a
+                  className="underline text-link-blue dark:text-link-purple"
+                  href={text.link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {text.content}
+                </a>
+              )
+            ]
+          : text.content}
       </span>
     );
   });
@@ -81,6 +92,9 @@ const renderBlock = (block) => {
         </h3>
       );
     case 'bulleted_list_item':
+      <li className="mb-4 leading-relaxed text-gray-700 dark:text-gray-300">
+        <Text text={value.text} />
+      </li>;
     case 'numbered_list_item':
       return (
         <li className="mb-4 leading-relaxed text-gray-700 dark:text-gray-300">
