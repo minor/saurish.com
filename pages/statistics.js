@@ -14,7 +14,7 @@ export default function Statistics() {
         </h1>
         <br />
         <div className="max-w-2xl md:max-w-3xl">
-          <p className="mx-2 mb-6 text-left text-gray-700 text-md md:text-lg md:mx-0 dark:text-gray-400">
+          <p className="mx-2 mb-6 text-center text-gray-700 md:text-left text-md md:text-lg md:mx-0 dark:text-gray-400">
             This is a constantly updating page that displays some of the
             statistics of the services I utilize.
           </p>
