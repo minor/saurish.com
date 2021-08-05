@@ -41,7 +41,7 @@ class MyDocument extends Document {
           <script
             async
             defer
-            data-website-id="d663b1d1-5941-47ac-89e8-df058184b79b"
+            data-website-id="7b7fb05a-0d26-4cb4-a774-d74a0f83998e"
             src="https://umami.saurish.com/umami.js"
           ></script>
         </Head>
