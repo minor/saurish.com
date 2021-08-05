@@ -41,8 +41,8 @@ class MyDocument extends Document {
           <script
             async
             defer
-            src="https://aurora.saurish.com/aurora.js"
-            aurora-id="2cd16199347a13543b0d1772d3280520"
+            data-website-id="d663b1d1-5941-47ac-89e8-df058184b79b"
+            src="https://umami.saurish.com/umami.js"
           ></script>
         </Head>
         <body className="text-white bg-white dark:bg-black dark:text-black">
