@@ -144,9 +144,9 @@ export default function Post({ page, blocks }) {
   const imageLink =
     'https://og.saurish.com/**' +
     page.properties.Name.title[0].plain_text +
-    '**.png?theme=light&md=1&fontSize=100px&images=https%3A%2F%2Fsaurish.com%2Flogos%2Flogo-dark.jpg';
+    '**.png?theme=dark&&md=1&fontSize=100px&images=https%3A%2F%2Fwww.saurish.com%2Fstatic%2Ffavicons%2Ffavicon-dark.png';
 
-  return (
+  https: return (
     <Layout
       title={page.properties.Name.title[0].plain_text}
       description={page.properties.Description.rich_text[0].plain_text}
