@@ -41,9 +41,11 @@ export default function Home({ posts }) {
             .
           </p>
           {posts.map((post) => {
-            const date = new Date(
-              post.properties.Date.date.start
-            ).toLocaleString('en-US', {
+            const dateString = post.properties.Date.date.start.replace(
+              /-/g,
+              '/'
+            );
+            const date = new Date(dateString).toLocaleString('en-US', {
               month: 'short',
               day: '2-digit',
               year: 'numeric'
