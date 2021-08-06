@@ -37,6 +37,9 @@ export const Text = ({ text }) => {
       >
         {text.link
           ? [
+              text.link.url.endsWith('.png') ||
+              text.link.url.endsWith('.jpg') ||
+              text.link.url.endsWith('.gif') ||
               imageSources.some((u) => text.link.url.includes(u)) ? (
                 <div className="mx-4">
                   <img
