@@ -1,26 +1,47 @@
-import sendgrid from '@sendgrid/mail';
+const { Client } = require('@notionhq/client');
 
-sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
+const notion = new Client({
+  auth: process.env.NOTION_TOKEN_2
+});
 
-export default async function (req, res) {
-  const body = JSON.parse(req.body);
-
-  const message = `
-    Name: ${body.name}\r\n
-    Email: ${body.email}\r\n
-    Message: ${body.message}
-  `;
-  try {
-    await sendgrid.send({
-      to: 'me@saurish.com',
-      from: 'me@saurish.com',
-      subject: `[Website] New Message from ${body.name}`,
-      text: message,
-      html: message.replace(/\r\n/g, '<br>')
-    });
-  } catch (error) {
-    return res.status(error.statusCode || 500).json({ error: error.message });
+export default async function handler(req, res) {
+  if (req.method !== 'POST') {
+    return res
+      .status(405)
+      .json({ message: `${req.method} requests are not allowed` });
   }
-
-  return res.status(200).json({ error: 'No Error!' });
+  try {
+    const { name, email, message } = JSON.parse(req.body);
+    await notion.pages.create({
+      parent: {
+        database_id: process.env.NOTION_DATABASE_ID_2
+      },
+      properties: {
+        Name: {
+          title: [
+            {
+              text: {
+                content: name
+              }
+            }
+          ]
+        },
+        Email: {
+          email: email
+        },
+        Message: {
+          rich_text: [
+            {
+              text: {
+                content: message
+              }
+            }
+          ]
+        }
+      }
+    });
+    res.status(201).json({ msg: 'Success' });
+  } catch (error) {
+    res.status(500).json({ msg: 'There was an error.' });
+  }
 }
