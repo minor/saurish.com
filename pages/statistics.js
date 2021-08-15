@@ -1,6 +1,6 @@
 import Layout from '../components/Layout';
 import TopTracks from '../components/TopTracks';
-import Unsplash from '../components/Unsplash';
+// import Unsplash from '../components/Unsplash';
 
 export default function Statistics() {
   return (
@@ -25,6 +25,22 @@ export default function Statistics() {
             Updated daily.
           </p>
           <TopTracks />
+          {/* <h2 className="mt-16 mb-4 text-2xl font-bold tracking-tight text-center text-black md:text-left md:text-3xl dark:text-white">
+            Unsplash Statistics
+          </h2>
+          <p className="mb-4 text-gray-600 dark:text-gray-400">
+            I regularly post my photos on Unsplash. I also{' '}
+            <a
+              href="https://photos.saurish.com/"
+              className="underline text-link-blue dark:text-link-purple"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              self-host
+            </a>{' '}
+            them.
+          </p>
+          <Unsplash /> */}
         </div>
       </div>
     </Layout>

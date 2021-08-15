@@ -5,11 +5,11 @@ let unsplash;
 export default async function handler(_, res) {
   if (!unsplash) {
     unsplash = new Unsplash({
-      accessKey: process.env.UNSPLASH_ACCESS_TOKEN
+      accessKey: process.env.UNSPLASH_ACCESS_KEY
     });
   }
 
-  const userStats = await unsplash.users.statistics('leerob');
+  const userStats = await unsplash.users.statistics('saurishs');
   const { downloads, views } = await toJson(userStats);
 
   res.setHeader(
