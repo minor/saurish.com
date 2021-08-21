@@ -77,15 +77,15 @@ export default function About() {
             <Image
               src="/images/me.jpg"
               className="rounded-lg"
-              alt="A photo of the author Saurish"
+              alt="A photo of Saurish"
               height={1200}
               width={900}
             />
-            <blockquote>
+            {/* <blockquote>
               <p className="mx-2 mt-2 text-sm text-gray-700 md:mt-4 md:text-lg md:mx-0 dark:text-gray-400">
                 Enjoy a photo of me.
               </p>
-            </blockquote>
+            </blockquote> */}
           </div>
         </div>
       </div>
