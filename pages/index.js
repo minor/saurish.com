@@ -57,8 +57,8 @@ export default function Home() {
         <p className="max-w-2xl mx-4 mb-8 text-xl text-gray-800 md:mx-0 dark:text-gray-400">
           I’m a junior at{' '}
           <a
-            href="https://evhs.schoolloop.com/"
-            className="underline text-link-blue dark:text-link-purple"
+            href="https://evergreenvalleyhigh.esuhsd.org/"
+            className="underline text-link-blue dark:text-link-purple outer-glow"
             target="_blank"
             rel="noopener noreferrer"
           >
