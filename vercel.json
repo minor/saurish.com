@@ -30,6 +30,18 @@
       "destination": "https://open.spotify.com/playlist/1MJixQZLbzzbDtHxeQ3FOs?si=7d6700fb8fba49fe"
     },
     {
+      "source": "/playlists/rock",
+      "destination": "https://open.spotify.com/playlist/2pBi8IrWRrJtVRBVHzh9hS?si=a65301e571b14c6e"
+    },
+    {
+      "source": "/insta",
+      "destination": "https://instagram.com/saurishhh"
+    },
+    {
+      "source": "/twitter",
+      "destination": "https://twitter.com/saurishhh"
+    },
+    {
       "source": "/spotify",
       "destination": "https://open.spotify.com/user/5fofyiqlbz4289us6l6lh3wzk?si=dd1aa69143f6495f"
     }
