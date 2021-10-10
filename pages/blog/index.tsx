@@ -53,9 +53,10 @@ export default function Home({ posts }) {
             return (
               <Link
                 href={`/blog/${post.properties.Slug.rich_text[0].plain_text}`}
+                key={post}
               >
                 <a className="w-full">
-                  <div className="w-full mb-8">
+                  <div className="w-full mb-8 md:mb-10">
                     <div className="flex flex-col justify-between md:flex-row">
                       <h4 className="w-full mb-2 text-lg font-medium text-gray-900 md:text-xl dark:text-gray-100">
                         <Text text={post.properties.Name.title} />
