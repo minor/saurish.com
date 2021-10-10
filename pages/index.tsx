@@ -2,7 +2,7 @@
 import Head from 'next/head';
 import Footer from '../components/Footer';
 import Link from 'next/link';
-import Skills from '../components/Skills.js';
+import Skills from '../components/Skills';
 import Projects from '../components/Projects';
 import Connect from '../components/Connect';
 

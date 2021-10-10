@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
-import NowPlaying from '../components/NowPlaying';
+import NowPlaying from './NowPlaying';
 
 const ExternalLink = ({ href, children }) => (
   <a
@@ -131,7 +131,6 @@ export default function Footer() {
             <g
               transform="translate(-1 -1)"
               strokeWidth="2"
-              stroke="#000"
               strokeLinecap="round"
               fill="none"
               stroke="currentColor"

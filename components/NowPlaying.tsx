@@ -1,10 +1,11 @@
-import Image from "next/image";
-import useSWR from "swr";
+import Image from 'next/image';
+import useSWR from 'swr';
+import { NowPlayingSong } from '../lib/types';
 
-import fetcher from "../lib/fetcher";
+import fetcher from '../lib/fetcher';
 
 export default function NowPlaying() {
-  const { data } = useSWR("/api/now-playing", fetcher);
+  const { data } = useSWR<NowPlayingSong>('/api/now-playing', fetcher);
 
   return (
     <div className="flex items-start p-2 mb-8 border border-gray-300 rounded-lg dark:border-gray-800 w-72">
@@ -13,7 +14,7 @@ export default function NowPlaying() {
         className="rounded-lg w-60 h-60"
         height={60}
         width={60}
-        src={data?.albumImageUrl || "/images/placeholder.jpeg"}
+        src={data?.albumImageUrl || '/images/placeholder.jpeg'}
       />
       <div className="flex flex-col items-start justify-center ml-3">
         <a
@@ -22,10 +23,10 @@ export default function NowPlaying() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          {data?.title ?? "Not Playing"}
+          {data?.title ?? 'Not Playing'}
         </a>
         <p className="w-48 text-gray-500 truncate dark:text-gray-300 max-w-48">
-          {data?.artist ?? "Spotify"}
+          {data?.artist ?? 'Spotify'}
         </p>
       </div>
       <svg className="w-4 h-4 mt-1 ml-auto" viewBox="0 0 168 168">
