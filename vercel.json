@@ -28,6 +28,10 @@
     {
       "source": "/playlists/shallow",
       "destination": "https://open.spotify.com/playlist/1MJixQZLbzzbDtHxeQ3FOs?si=7d6700fb8fba49fe"
+    },
+    {
+      "source": "/spotify",
+      "destination": "https://open.spotify.com/user/5fofyiqlbz4289us6l6lh3wzk?si=dd1aa69143f6495f"
     }
   ]
 }
