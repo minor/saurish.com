@@ -2,7 +2,7 @@
 import Head from 'next/head';
 import Footer from '../components/Footer';
 import Link from 'next/link';
-import Skills from '../components/Skills.js';
+import Skills from '../components/Skills';
 import Projects from '../components/Projects';
 import Connect from '../components/Connect';
 
@@ -99,13 +99,10 @@ export default function Home() {
             </a>
           </Link>
         </div>
-        <div className="w-5/6 h-px max-w-2xl mb-10 md:max-w-3xl md:w-full animate-gradient-x color-bg" />
+        <div className="w-5/6 h-[0.125rem] rounded max-w-2xl mb-10 md:max-w-3xl md:w-full animate-gradient-x color-bg" />
         <section id="projects" className="mb-10">
           <div className="flex items-center justify-center mb-6">
-            <div
-              className="flex items-center justify-center mr-5 border border-gray-400 rounded-full dark:border-gray-custom md:mr-3"
-              style={{ height: '2.1875rem', width: '2.1875rem' }}
-            >
+            <div className="flex items-center w-[2.1875rem] h-[2.1875rem] justify-center mr-5 border border-gray-400 rounded-full dark:border-gray-custom md:mr-3">
               <h2 className="font-bold text-gray-800 dark:text-gray-200">1</h2>
             </div>
             <h1 className="text-2xl font-medium text-gray-800 underline dark:text-gray-200">
@@ -125,10 +122,7 @@ export default function Home() {
         </section>
         <section id="skills" className="mb-20">
           <div className="flex items-center justify-center mb-6">
-            <div
-              className="flex items-center justify-center mr-5 border border-gray-400 rounded-full dark:border-gray-custom md:mr-3"
-              style={{ height: '2.1875rem', width: '2.1875rem' }}
-            >
+            <div className="flex items-center w-[2.1875rem] h-[2.1875rem] justify-center mr-5 border border-gray-400 rounded-full dark:border-gray-custom md:mr-3">
               <h2 className="font-bold text-gray-800 dark:text-gray-200">2</h2>
             </div>
             <h1 className="text-2xl font-medium text-gray-800 underline dark:text-gray-200">
@@ -146,10 +140,7 @@ export default function Home() {
         </section>
         <section id="connect" className="mb-10">
           <div className="flex items-center justify-center mb-6">
-            <div
-              className="flex items-center justify-center mr-5 border border-gray-400 rounded-full dark:border-gray-custom md:mr-3"
-              style={{ height: '2.1875rem', width: '2.1875rem' }}
-            >
+            <div className="flex items-center w-[2.1875rem] h-[2.1875rem] justify-center mr-5 border border-gray-400 rounded-full dark:border-gray-custom md:mr-3">
               <h2 className="font-bold text-gray-800 dark:text-gray-200">3</h2>
             </div>
             <h1 className="text-2xl font-medium text-gray-800 underline dark:text-gray-200">

@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Layout from '../../components/Layout';
 import { getDatabase } from '../../lib/notion';
-import { Text } from './[slug].js';
+import { Text } from './[slug]';
 
 export const databaseId = process.env.NOTION_DATABASE_ID;
 
