@@ -24,8 +24,7 @@ export default function About() {
               Evergreen Valley High School
             </a>
             , located in the capital of the Silicon Valley: San Jose. I love
-            coding and messing around in different fields of computer science. I
-            love coding and enjoy messing around in different areas of computer
+            coding and enjoy messing around in different areas of computer
             science! I'm currently exploring bioinformatics – ranging from
             medical computer vision to genome sequencing – to understand the
             intersection of biology and computer science.
