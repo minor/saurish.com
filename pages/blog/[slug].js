@@ -5,7 +5,6 @@ import { v4 as uuid } from 'uuid';
 import Layout from '../../components/Layout';
 import { FC, useEffect } from 'react';
 import PageViews from '../../components/PageViews';
-import { useRouter } from 'next/router';
 
 export const Text = ({ text }) => {
   if (!text) {
@@ -137,9 +136,6 @@ const renderBlock = (block) => {
 };
 
 export default function Post({ page, blocks }) {
-  const router = useRouter();
-  const { slugPOST } = router.query;
-
   if (!page || !blocks) {
     return <div />;
   }
@@ -150,11 +146,14 @@ export default function Post({ page, blocks }) {
 
   const dateString = page.properties.Date.date.start.replace(/-/g, '/');
 
+  const slugPage = page.properties.Slug.rich_text[0].plain_text;
+
   useEffect(() => {
-    fetch(`/api/views/${slugPOST}`, {
+    fetch(`/api/views/${slugPage}`, {
       method: 'POST'
     });
-  }, [slugPOST]);
+  }, [slugPage]);
+  console.log(slugPage);
 
   return (
     <Layout
@@ -181,7 +180,7 @@ export default function Post({ page, blocks }) {
           </div>
           <p className="mt-2 text-sm text-gray-600 dark:text-gray-400 min-w-32 md:mt-0">
             {page.properties.ReadTime.rich_text[0].plain_text} minutes {' / '}
-            {<PageViews slug={slugPOST} />}
+            {<PageViews slug={slugPage} />}
           </p>
         </div>
         <div className="w-full leading-relaxed prose dark:prose-dark max-w-none">
