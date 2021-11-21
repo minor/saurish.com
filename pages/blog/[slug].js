@@ -33,7 +33,7 @@ export const Text = ({ text }) => {
       >
         {text.link ? (
           <a
-            className="underline text-link-blue dark:text-link-purple"
+            className="max-w-4xl underline break-all text-link-blue dark:text-link-purple"
             href={text.link.url}
             target="_blank"
             rel="noopener noreferrer"
@@ -183,7 +183,7 @@ export default function Post({ page, blocks }) {
             {<PageViews slug={slugPage} />}
           </p>
         </div>
-        <div className="w-full leading-relaxed prose dark:prose-dark max-w-none">
+        <div className="w-full leading-relaxed prose break-words dark:prose-dark max-w-none">
           {blocks.map((block) => (
             <Fragment key={block.id}>{renderBlock(block)}</Fragment>
           ))}
