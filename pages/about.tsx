@@ -74,11 +74,11 @@ export default function About() {
           </p>
           <div className="mx-2 prose text-center sm:mx-auto">
             <Image
-              src="/images/me.jpg"
+              src="/images/me.jpeg"
               className="rounded-lg"
               alt="A photo of Saurish"
-              height={1200}
-              width={900}
+              height={1496}
+              width={1122}
             />
             {/* <blockquote>
               <p className="mx-2 mt-2 text-sm text-gray-700 md:mt-4 md:text-lg md:mx-0 dark:text-gray-400">
