@@ -170,7 +170,15 @@ export default function Post({ page, blocks }) {
         <div className="flex flex-col items-start justify-between w-full mt-2 mb-10 md:flex-row md:items-center">
           <div className="flex items-center">
             <p className="text-sm text-gray-700 dark:text-gray-300">
-              {'Saurish Srivastava / '}
+              <a
+                href="https://twitter.com/saurishhh"
+                target="_blank"
+                className="underline"
+                rel="noopener noreferrer"
+              >
+                Saurish Srivastava
+              </a>
+              {' / '}
               {new Date(dateString).toLocaleString('en-US', {
                 month: 'long',
                 day: '2-digit',
