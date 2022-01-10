@@ -84,11 +84,19 @@ const Project = ({ image, glink, link, title, description, index }) => {
 const FullProjects = () => (
   <>
     <Project
+      image="/images/plutonium"
+      glink="https://github.com/minor/plutonium/"
+      link="https://plutonium.saurish.com"
+      title="Plutonium"
+      index={false}
+      description="Plutonium is a free template for businesses built with Next.js 11 and styled with TailwindCSS. It comes with built in dark-mode support & blazing fast speeds."
+    />
+    <Project
       image="/images/c2cmha"
       glink="https://github.com/minor/english-project"
       link="https://c2cmha.vercel.app/"
       title="Coast-to-Coast Mental Health Awareness"
-      index={false}
+      index={true}
       description="This website was a theoretical project for school with no firm plans. I utilized it to exhibit my designing skills. If you are interested in reaching out to an organization that is dedicated to promoting neurodiversity, please check out Ataraxia from Project enVision U.S."
     />
   </>
@@ -122,12 +130,12 @@ export default function Projects() {
          communities, while materially impacting the mental health of underserved populations."
       />
       <Project
-        image="/images/plutonium"
-        glink="https://github.com/minor/plutonium/"
-        link="https://plutonium.saurish.com"
-        title="Plutonium"
+        image="/images/dialexicon"
+        glink="https://github.com/minor/dialexicon/"
+        link="https://dialexicon.org"
+        title="Dialexicon"
         index={true}
-        description="Plutonium is a free template for businesses built with Next.js 11 and styled with TailwindCSS. It comes with built in dark-mode support & blazing fast speeds."
+        description="I'm the vice-president of Dialexicon, a global non-profit organization that serves as a platform for high school students to learn, discuss, and contribute to philosophical thought and writing. At Dialexicon, we value deep reflections of society – namely education – and create modes of empathy to explore intersectionality."
       />
       {isShowingFullProjects ? (
         <FullProjects />
