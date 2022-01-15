@@ -3,6 +3,7 @@ import { getDatabase, getPage, getBlocks } from '../../lib/notion';
 import { databaseId } from './index';
 import { v4 as uuid } from 'uuid';
 import Layout from '../../components/Layout';
+import Image from 'next/image';
 import { FC, useEffect } from 'react';
 import PageViews from '../../components/PageViews';
 
@@ -55,35 +56,35 @@ const renderBlock = (block) => {
   switch (type) {
     case 'paragraph':
       return (
-        <p className="mb-4 leading-relaxed text-gray-700 dark:text-gray-300">
+        <p className="mb-4 prose text-gray-700 dark:text-gray-300">
           <Text text={value.text} />
         </p>
       );
     case 'heading_1':
       return (
-        <h1 className="my-4 text-3xl font-bold leading-relaxed text-black md:text-4xl dark:text-white">
+        <h1 className="my-4 text-3xl font-bold prose text-black md:text-4xl dark:text-white">
           <Text text={value.text} />
         </h1>
       );
     case 'heading_2':
       return (
-        <h2 className="my-4 text-xl font-bold leading-relaxed text-black dark:text-white md:text-2xl">
+        <h2 className="my-4 text-xl font-bold prose text-black dark:text-white md:text-2xl">
           <Text text={value.text} />
         </h2>
       );
     case 'heading_3':
       return (
-        <h3 className="my-4 text-lg font-bold leading-relaxed text-black dark:text-white md:text-xl">
+        <h3 className="my-4 text-lg font-bold prose text-black dark:text-white md:text-xl">
           <Text text={value.text} />
         </h3>
       );
     case 'bulleted_list_item':
-      <li className="mb-4 leading-relaxed text-gray-700 dark:text-gray-300">
+      <li className="mb-4 prose text-gray-700 dark:text-gray-300">
         <Text text={value.text} />
       </li>;
     case 'numbered_list_item':
       return (
-        <li className="mb-4 leading-relaxed text-gray-700 dark:text-gray-300">
+        <li className="mb-4 prose text-gray-700 dark:text-gray-300">
           <Text text={value.text} />
         </li>
       );
@@ -92,7 +93,7 @@ const renderBlock = (block) => {
         <div>
           <label htmlFor={id}>
             <input type="checkbox" id={id} defaultChecked={value.checked} />{' '}
-            <span className="ml-2 leading-relaxed text-gray-700 dark:text-gray-300">
+            <span className="ml-2 prose text-gray-700 dark:text-gray-300">
               <Text text={value.text} />
             </span>
           </label>
@@ -101,7 +102,7 @@ const renderBlock = (block) => {
     case 'toggle':
       return (
         <details>
-          <summary className="leading-relaxed text-gray-700 cursor-pointer dark:text-gray-300">
+          <summary className="prose text-gray-700 cursor-pointer dark:text-gray-300">
             <Text text={value.text} />
           </summary>
           {value.children?.map((block) => (
@@ -124,6 +125,19 @@ const renderBlock = (block) => {
             <figcaption className="text-center">{caption}</figcaption>
           )}
         </figure>
+      );
+    case 'divider':
+      return (
+        <hr
+          className="w-5/6 mx-auto border border-gray-400 dark:border-gray-custom"
+          key={id}
+        />
+      );
+    case 'quote':
+      return (
+        <blockquote className="prose" key={id}>
+          <span className="text-[#6b7280]">{value.text[0].plain_text}</span>
+        </blockquote>
       );
     default:
       return (

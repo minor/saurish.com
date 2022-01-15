@@ -88,21 +88,6 @@ body::-webkit-scrollbar-thumb {
   outline: 1px solid rgb(33, 34, 34);
 }
 
-.color-gradient {
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  background-image: linear-gradient(
-    94.75deg,
-    rgb(5, 157, 255) 0%,
-    rgb(101, 73, 213) 43.66%,
-    rgb(227, 63, 161) 64.23%,
-    rgb(246, 79, 86) 80.09%,
-    rgb(251, 83, 67) 83.76%,
-    rgb(253, 123, 66) 100%
-  );
-}
-
 .color-bg {
   background-image: linear-gradient(
     94.75deg,
