@@ -201,7 +201,7 @@ export default function Post({ page, blocks }) {
             </p>
           </div>
           <p className="mt-2 text-sm text-gray-600 dark:text-gray-400 min-w-32 md:mt-0">
-            {page.properties.ReadTime.rich_text[0].plain_text} minutes {' / '}
+            {page.properties.ReadTime.rich_text[0].plain_text} min read{' • '}
             {<PageViews slug={slugPage} />}
           </p>
         </div>
