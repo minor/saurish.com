@@ -43,8 +43,9 @@ export default function About() {
             .
             <br />
             <br />
-            I'm also an avid debater! I participate in Varsity Lincoln Douglas
-            on the National Circuit and read a variety of different{' '}
+            I'm also an avid debater! I have qualified to the Tournament of
+            Champions in both Varsity Lincoln Douglas and Varsity Public Forum.
+            I read a variety of different{' '}
             <a
               href="https://hsld.debatecoaches.org/Evergreen%20Valley/Srivastava%20Neg"
               target="_blank"
@@ -52,8 +53,22 @@ export default function About() {
               rel="noopener noreferrer"
             >
               arguments
-            </a>
-            . I mostly engage in critical literature and philosophical bases.
+            </a>{' '}
+            and mostly engage in critical literature and philosophical bases.
+            <br />
+            <br />
+            Because I love reading and discussing philosophy, I am the
+            vice-president of{' '}
+            <a
+              href="https://dialexicon.org/"
+              target="_blank"
+              className="underline text-link-blue dark:text-link-purple"
+              rel="noopener noreferrer"
+            >
+              Dialexicon
+            </a>{' '}
+            where I organize a weekly discussion of philosophy and lead a high
+            school student journal.
             <br />
             <br />
             I’m the president and executive director at{' '}
@@ -67,18 +82,28 @@ export default function About() {
             </a>
             , a non-profit organization dedicated to the community. Our mission
             is to create a connected community where education is free and
-            accessible. With COVID-19 removing most in-person contact, we've
-            been committed to helping students from different communities
-            through online services. I'm in charge of leading all active
-            projects, managing the team, and teaching!
+            accessible. I'm also the co-founder and director of{' '}
+            <a
+              href="https://ataraxiahealth.org/"
+              target="_blank"
+              className="underline text-link-blue dark:text-link-purple"
+              rel="noopener noreferrer"
+            >
+              Ataraxia
+            </a>
+            , where we have been promoting neurodiversity through digital means,
+            and physically creating mental health and hygiene kits for the
+            homeless populations.
+            <br />
+            <br />
           </p>
           <div className="mx-2 prose text-center sm:mx-auto">
             <Image
-              src="/images/me.jpeg"
+              src="/images/me.JPG"
               className="rounded-lg"
               alt="A photo of Saurish"
-              height={1496}
-              width={1122}
+              height={959}
+              width={686}
             />
             {/* <blockquote>
               <p className="mx-2 mt-2 text-sm text-gray-700 md:mt-4 md:text-lg md:mx-0 dark:text-gray-400">

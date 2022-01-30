@@ -111,9 +111,8 @@ export default function Home() {
           </div>
           <div className="max-w-2xl md:max-w-3xl">
             <p className="mx-4 mb-12 text-lg text-center text-gray-700 md:mx-0 dark:text-gray-400">
-              I've mostly pursued independent projects, although I have
-              previously worked as a freelancer. These are some of my most
-              notable projects.
+              I've mostly pursued independent projects – I love exploring and
+              solving problems. These are some of my most notable projects.
             </p>
             <div className="mx-8 my-5 space-y-14 md:mx-0">
               <Projects />
@@ -132,8 +131,9 @@ export default function Home() {
           <div className="max-w-2xl md:max-w-3xl">
             <p className="mx-4 mb-12 text-lg text-center text-gray-700 md:mx-0 dark:text-gray-400">
               I love web development & also love dabbling with random scripts
-              and machine learning models with Python and MATLAB – it's quite
-              fun, you should try it.
+              and machine learning models with Python. I'm currently exploring
+              convolutional neural networks and their relevance to the
+              biological sciences.
             </p>
             <Skills />
           </div>
