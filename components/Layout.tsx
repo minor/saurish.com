@@ -16,7 +16,7 @@ export default function Layout(props) {
   const { children, ...customMeta } = props;
   const meta = {
     title: 'Saurish Srivastava – Student, researcher, leader.',
-    description: `High school junior interested in computer science, biology, and making a difference.`,
+    description: `High school junior interested in philosophy, computational biology, and making a difference.`,
     image: 'https://saurish.com/static/favicons/send.png',
     type: 'website',
     ...customMeta

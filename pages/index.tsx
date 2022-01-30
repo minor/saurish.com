@@ -13,7 +13,7 @@ export default function Home() {
         <title>Saurish Srivastava – Student, researcher, leader.</title>
         <meta name="robots" content="follow, index" />
         <meta
-          content="High school junior interested in computer science, biology, and making a difference."
+          content="High school junior interested in philosophy, computational biology, and making a difference."
           name="description"
         />
         <meta property="og:url" content="https://saurish.com" />
@@ -25,7 +25,7 @@ export default function Home() {
         />
         <meta
           property="og:description"
-          content="High school junior interested in computer science, biology, and making a difference."
+          content="High school junior interested in philosophy, computational biology, and making a difference."
         />
         <meta
           property="og:title"
@@ -43,7 +43,7 @@ export default function Home() {
         />
         <meta
           name="twitter:description"
-          content="High school junior interested in computer science, biology, and making a difference."
+          content="High school junior interested in philosophy, computational biology, and making a difference."
         />
         <meta
           name="twitter:image"
@@ -64,7 +64,7 @@ export default function Home() {
           >
             Evergreen Valley High School
           </a>{' '}
-          interested in computer science and computational biology.
+          interested in philosophy and computational biology.
         </p>
 
         <div className="flex flex-row flex-wrap justify-center m-2 mb-10 space-x-4 text-center bg-white md:mb-10 md:m-0 gap-y-4 dark:bg-black">
