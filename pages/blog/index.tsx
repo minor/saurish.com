@@ -19,26 +19,9 @@ export default function Home({ posts }) {
         <br />
         <div className="max-w-2xl md:max-w-3xl">
           <p className="mx-4 mb-12 text-lg text-center text-gray-700 md:mx-0 dark:text-gray-400">
-            These are some of my thoughts on some cool and important topics, as
-            well as some tutorials. All the content is hosted in Notion{' '}
-            <a
-              href="https://www.notion.so/42772aeed8a74e62b02f93a3eaeba687?v=6868377308e944dc8fbd559587c76130"
-              className="underline text-link-blue dark:text-link-purple"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              here
-            </a>{' '}
-            & being pulled through their{' '}
-            <a
-              href="https://developers.notion.com/"
-              className="underline text-link-blue dark:text-link-purple"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Beta API
-            </a>
-            .
+            These are some posts about certain topics that I felt the need to
+            write and discuss as a student interested in philosophy. My goal: to
+            enable deep reflection and inspire intellectual vitality.
           </p>
           {posts.map((post) => {
             const dateString = post.properties.Date.date.start.replace(
