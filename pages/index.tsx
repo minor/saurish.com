@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Skills from '../components/Skills';
 import Projects from '../components/Projects';
 import Connect from '../components/Connect';
+import Subscribe from '../components/Subscribe';
 
 export default function Home() {
   return (
@@ -73,16 +74,6 @@ export default function Home() {
               About
             </a>
           </Link>
-          <Link href="/#projects">
-            <a className="px-2.5 py-1 text-lg text-gray-700 border hover:shadow-md border-gray-400 bg-transparent dark:hover:bg-gray-custom transition duration-200 rounded dark:text-gray-300 dark:border-gray-custom">
-              Projects
-            </a>
-          </Link>
-          <Link href="/#skills">
-            <a className="px-2.5 py-1 text-lg text-gray-700 border hover:shadow-md border-gray-400 bg-transparent dark:hover:bg-gray-custom transition duration-200 rounded dark:text-gray-300 dark:border-gray-custom">
-              Skills
-            </a>
-          </Link>
           <Link href="/statistics">
             <a className="px-2.5 py-1 text-lg text-gray-700 border hover:shadow-md border-gray-400 bg-transparent dark:hover:bg-gray-custom transition duration-200 rounded dark:text-gray-300 dark:border-gray-custom">
               Statistics
@@ -91,6 +82,16 @@ export default function Home() {
           <Link href="/blog">
             <a className="px-2.5 py-1 text-lg text-gray-700 border hover:shadow-md border-gray-400 bg-transparent dark:hover:bg-gray-custom transition duration-200 rounded dark:text-gray-300 dark:border-gray-custom">
               Blog
+            </a>
+          </Link>
+          <Link href="/#projects">
+            <a className="px-2.5 py-1 text-lg text-gray-700 border hover:shadow-md border-gray-400 bg-transparent dark:hover:bg-gray-custom transition duration-200 rounded dark:text-gray-300 dark:border-gray-custom">
+              Projects
+            </a>
+          </Link>
+          <Link href="/#skills">
+            <a className="px-2.5 py-1 text-lg text-gray-700 border hover:shadow-md border-gray-400 bg-transparent dark:hover:bg-gray-custom transition duration-200 rounded dark:text-gray-300 dark:border-gray-custom">
+              Skills
             </a>
           </Link>
           <Link href="/#connect">
@@ -138,10 +139,27 @@ export default function Home() {
             <Skills />
           </div>
         </section>
-        <section id="connect" className="mb-10">
+        <section id="subscribe" className="mb-10">
           <div className="flex items-center justify-center mb-6">
             <div className="flex items-center w-[2.1875rem] h-[2.1875rem] justify-center mr-5 border border-gray-400 rounded-full dark:border-gray-custom md:mr-3">
               <h2 className="font-bold text-gray-800 dark:text-gray-200">3</h2>
+            </div>
+            <h1 className="text-2xl font-medium text-gray-800 underline dark:text-gray-200">
+              Subscribe
+            </h1>
+          </div>
+          <div className="max-w-2xl md:max-w-2xl">
+            {/* <p className="mx-4 mb-12 text-lg text-center text-gray-700 md:mx-0 dark:text-gray-400">
+              Get updates on weekly blog posts, reseach I've done, and more.
+              Delivered twice a month. Unsubscribe anytime.
+            </p> */}
+            <Subscribe />
+          </div>
+        </section>
+        <section id="connect" className="mb-10">
+          <div className="flex items-center justify-center mb-6">
+            <div className="flex items-center w-[2.1875rem] h-[2.1875rem] justify-center mr-5 border border-gray-400 rounded-full dark:border-gray-custom md:mr-3">
+              <h2 className="font-bold text-gray-800 dark:text-gray-200">4</h2>
             </div>
             <h1 className="text-2xl font-medium text-gray-800 underline dark:text-gray-200">
               Connect
