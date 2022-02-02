@@ -134,9 +134,10 @@ export default function Subscribe() {
           {`${
             subscriberCount > 0 ? subscriberCount.toLocaleString() : '-'
           } subscribers – `}
-          <Link href="/newsletter">
+          1 issue
+          {/* <Link href="/newsletter">
             <a>1 issue</a>
-          </Link>
+          </Link> */}
         </p>
       )}
     </div>
