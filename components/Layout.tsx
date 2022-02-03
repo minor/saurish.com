@@ -70,11 +70,6 @@ export default function Layout(props) {
               About
             </a>
           </Link>
-          <Link href="/statistics">
-            <a className="p-1 text-gray-900 sm:p-4 dark:text-gray-100 hover:text-gray-500 dark:hover:text-gray-500">
-              Statistics
-            </a>
-          </Link>
           <Link href="/blog">
             <a className="p-1 text-gray-900 sm:p-4 dark:text-gray-100 hover:text-gray-500 dark:hover:text-gray-500">
               Blog

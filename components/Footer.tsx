@@ -79,6 +79,11 @@ export default function Footer() {
               About
             </a>
           </Link>
+          <Link href="/blog">
+            <a className="p-1 text-gray-900 sm:p-4 hover:text-gray-500 dark:hover:text-gray-500 dark:text-gray-100">
+              Blog
+            </a>
+          </Link>
           <Link href="/#projects">
             <a className="p-1 text-gray-900 sm:p-4 hover:text-gray-500 dark:hover:text-gray-500 dark:text-gray-100">
               Projects
@@ -89,14 +94,9 @@ export default function Footer() {
               Skills
             </a>
           </Link>
-          <Link href="/statistics">
+          <Link href="/#subscribe">
             <a className="p-1 text-gray-900 sm:p-4 hover:text-gray-500 dark:hover:text-gray-500 dark:text-gray-100">
-              Statistics
-            </a>
-          </Link>
-          <Link href="/blog">
-            <a className="p-1 text-gray-900 sm:p-4 hover:text-gray-500 dark:hover:text-gray-500 dark:text-gray-100">
-              Blog
+              Newsletter
             </a>
           </Link>
           <Link href="/#connect">

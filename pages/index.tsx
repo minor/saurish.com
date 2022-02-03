@@ -74,11 +74,6 @@ export default function Home() {
               About
             </a>
           </Link>
-          <Link href="/statistics">
-            <a className="px-2.5 py-1 text-lg text-gray-700 border hover:shadow-md border-gray-400 bg-transparent dark:hover:bg-gray-custom transition duration-200 rounded dark:text-gray-300 dark:border-gray-custom">
-              Statistics
-            </a>
-          </Link>
           <Link href="/blog">
             <a className="px-2.5 py-1 text-lg text-gray-700 border hover:shadow-md border-gray-400 bg-transparent dark:hover:bg-gray-custom transition duration-200 rounded dark:text-gray-300 dark:border-gray-custom">
               Blog
@@ -92,6 +87,11 @@ export default function Home() {
           <Link href="/#skills">
             <a className="px-2.5 py-1 text-lg text-gray-700 border hover:shadow-md border-gray-400 bg-transparent dark:hover:bg-gray-custom transition duration-200 rounded dark:text-gray-300 dark:border-gray-custom">
               Skills
+            </a>
+          </Link>
+          <Link href="/#subscribe">
+            <a className="px-2.5 py-1 text-lg text-gray-700 border hover:shadow-md border-gray-400 bg-transparent dark:hover:bg-gray-custom transition duration-200 rounded dark:text-gray-300 dark:border-gray-custom">
+              Newsletter
             </a>
           </Link>
           <Link href="/#connect">
