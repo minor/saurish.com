@@ -4,13 +4,14 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  const result = await fetch('https://www.getrevue.co/api/v2/subscribers', {
+  const result = await fetch('https://api.buttondown.email/v1/subscribers', {
     method: 'GET',
     headers: {
-      Authorization: `Token ${process.env.REVUE_API_KEY}`,
+      Authorization: `Token ${process.env.BUTTONDOWN_API_KEY}`,
       'Content-Type': 'application/json'
     }
   });
+
   const data = await result.json();
 
   if (!result.ok) {
@@ -22,5 +23,5 @@ export default async function handler(
     'public, s-maxage=1200, stale-while-revalidate=600'
   );
 
-  return res.status(200).json({ count: data.length });
+  return res.status(200).json({ count: data });
 }

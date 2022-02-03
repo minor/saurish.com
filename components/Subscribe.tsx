@@ -28,7 +28,7 @@ const LoadingSpinner = () => (
 );
 
 const ErrorMessage = ({ children }) => (
-  <p className="flex items-center text-sm font-bold text-red-700">
+  <p className="flex items-center text-sm font-bold text-red-700 dark:text-red-600">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 20 20"
@@ -46,7 +46,7 @@ const ErrorMessage = ({ children }) => (
 );
 
 const SuccessMessage = ({ children }) => (
-  <p className="flex items-center text-sm font-bold text-green-600">
+  <p className="flex items-center text-sm font-bold text-green-600 dark:text-green-500">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 20 20"
@@ -106,13 +106,13 @@ export default function Subscribe() {
       </p>
       <p className="my-1 text-gray-800 dark:text-gray-200">
         Get updates on weekly blog posts, reseach I've done, and more. Delivered
-        twice a month. Unsubscribe anytime.
+        once a month. Unsubscribe anytime.
       </p>
       <form className="relative my-4" onSubmit={subscribe}>
         <input
           ref={inputEl}
           aria-label="Email for newsletter"
-          placeholder="tim@apple.com"
+          placeholder="elon@musk.com"
           type="email"
           autoComplete="email"
           required
@@ -134,10 +134,7 @@ export default function Subscribe() {
           {`${
             subscriberCount > 0 ? subscriberCount.toLocaleString() : '-'
           } subscribers – `}
-          1 issue
-          {/* <Link href="/newsletter">
-            <a>1 issue</a>
-          </Link> */}
+          <a href="https://buttondown.email/saurish/archive">1 issue</a>
         </p>
       )}
     </div>

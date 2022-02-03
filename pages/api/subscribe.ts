@@ -10,19 +10,27 @@ export default async function handler(
     return res.status(400).json({ error: 'Email is required' });
   }
 
-  const result = await fetch('https://www.getrevue.co/api/v2/subscribers', {
+  const result = await fetch('https://api.buttondown.email/v1/subscribers', {
     method: 'POST',
     headers: {
-      Authorization: `Token ${process.env.REVUE_API_KEY}`,
+      Authorization: `Token ${process.env.BUTTONDOWN_API_KEY}`,
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify({ email })
+    body: JSON.stringify({ email: email, tags: ['saurish'] })
   });
-  const data = await result.json();
 
-  if (!result.ok) {
-    return res.status(500).json({ error: data.error.email[0] });
+  if (result.status >= 400) {
+    const text = await result.text();
+
+    if (text.includes('already subscribed')) {
+      return res
+        .status(400)
+        .json({ error: `It seems you're already subscribed!` });
+    }
+
+    return res.status(400).json({
+      error: text
+    });
   }
-
   return res.status(201).json({ error: '' });
 }
