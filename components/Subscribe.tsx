@@ -105,7 +105,7 @@ export default function Subscribe() {
         Subscribe to the newsletter
       </p>
       <p className="my-1 text-gray-800 dark:text-gray-200">
-        Get updates on weekly blog posts, reseach I've done, and more. Delivered
+        Get updates on weekly blog posts, research I've done, and more. Delivered
         once a month. Unsubscribe anytime.
       </p>
       <form className="relative my-4" onSubmit={subscribe}>
