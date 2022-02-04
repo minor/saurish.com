@@ -4,7 +4,7 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  const result = await fetch('https://api.buttondown.email/v1/subscribers', {
+  const response = await fetch('https://api.buttondown.email/v1/subscribers', {
     method: 'GET',
     headers: {
       Authorization: `Token ${process.env.BUTTONDOWN_API_KEY}`,
@@ -12,16 +12,12 @@ export default async function handler(
     }
   });
 
-  const data = await result.json();
-
-  if (!result.ok) {
-    return res.status(500).json({ error: 'Error retrieving subscribers' });
-  }
+  const { count } = await response.json();
 
   res.setHeader(
     'Cache-Control',
     'public, s-maxage=1200, stale-while-revalidate=600'
   );
 
-  return res.status(200).json({ count: data });
+  return res.status(200).json({ count });
 }
