@@ -15,12 +15,12 @@ const ExternalLink = ({ href, children }) => (
 
 const Project = ({ image, glink, link, title, description, index }) => {
   return (
-    <div className="flex flex-wrap md:justify-between md:items-center">
+    <div className="flex flex-wrap md:items-center md:justify-between">
       <div
         className={
           index
             ? 'w-full rounded shadow-xl md:w-6/12'
-            : 'w-full rounded shadow-xl md:w-6/12 md:order-1'
+            : 'w-full rounded shadow-xl md:order-1 md:w-6/12'
         }
       >
         <Image
@@ -91,14 +91,14 @@ const FullProjects = () => (
       index={false}
       description="Plutonium is a free template for businesses built with Next.js 11 and styled with TailwindCSS. It comes with built in dark-mode support & blazing fast speeds."
     />
-    <Project
+    {/* <Project
       image="/images/c2cmha"
       glink="https://github.com/minor/english-project"
       link="https://c2cmha.vercel.app/"
       title="Coast-to-Coast Mental Health Awareness"
       index={true}
       description="This website was a theoretical project for school with no firm plans. I utilized it to exhibit my designing skills. If you are interested in reaching out to an organization that is dedicated to promoting neurodiversity, please check out Ataraxia from Project enVision U.S."
-    />
+    /> */}
   </>
 );
 
