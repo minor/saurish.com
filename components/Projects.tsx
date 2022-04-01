@@ -29,6 +29,7 @@ const Project = ({ image, glink, link, title, description, index }) => {
           height="983"
           sizes={`(min-width:${theme.screens.md}) 384px, 100vw`}
           alt={title}
+          className="rounded-md"
           layout="responsive"
         />
       </div>
