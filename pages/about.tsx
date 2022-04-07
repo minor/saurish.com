@@ -8,12 +8,12 @@ export default function About() {
       description="A little bit more information about who I am and what I do."
     >
       <div className="flex flex-col items-center justify-center max-w-4xl mx-auto mb-16">
-        <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
-          About
+        <h1 className="mb-4 text-3xl font-bold tracking-tight text-black dark:text-white md:text-5xl">
+          About Me
         </h1>
         <br />
         <div className="max-w-2xl md:max-w-3xl">
-          <p className="mx-2 mb-12 text-center text-gray-700 md:text-left md:mb-20 text-md md:text-lg md:mx-0 dark:text-gray-400">
+          <p className="mx-2 mb-8 text-left text-gray-700 text-md dark:text-gray-400 md:mx-0 md:mb-12 md:text-lg">
             Hey there! I'm Saurish Srivastava. I'm a junior at{' '}
             <a
               href="https://evhs.schoolloop.com/"
@@ -99,11 +99,11 @@ export default function About() {
           </p>
           <div className="mx-2 prose text-center sm:mx-auto">
             <Image
-              src="/images/me.JPG"
+              src="/images/me.jpeg"
               className="rounded-lg"
               alt="A photo of Saurish"
-              height={959}
-              width={686}
+              height={1008}
+              width={756}
             />
             {/* <blockquote>
               <p className="mx-2 mt-2 text-sm text-gray-700 md:mt-4 md:text-lg md:mx-0 dark:text-gray-400">
