@@ -1,7 +1,13 @@
 import Layout from '../components/Layout';
 import Image from 'next/image';
+import { useState } from 'react';
+
+function cn(...classes: string[]) {
+  return classes.filter(Boolean).join(' ');
+}
 
 export default function About() {
+  const [isLoading, setLoading] = useState(true);
   return (
     <Layout
       title="About | Saurish"
@@ -100,10 +106,15 @@ export default function About() {
           <div className="mx-2 prose text-center sm:mx-auto">
             <Image
               src="/images/me.jpeg"
-              className="rounded-lg"
               alt="A photo of Saurish"
+              className={cn(
+                'rounded-lg duration-700 ease-in-out',
+                isLoading ? 'scale-110 blur-xl' : 'scale-100 blur-0'
+              )}
               height={1008}
               width={756}
+              layout="responsive"
+              onLoadingComplete={() => setLoading(false)}
             />
             {/* <blockquote>
               <p className="mx-2 mt-2 text-sm text-gray-700 md:mt-4 md:text-lg md:mx-0 dark:text-gray-400">

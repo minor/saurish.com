@@ -2,6 +2,38 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { theme } from '../lib/tailwind';
 
+function cn(...classes: string[]) {
+  return classes.filter(Boolean).join(' ');
+}
+
+type Image = {
+  title: string;
+  imageSrc: string;
+};
+
+function BlurImage({ imageSrc, title }) {
+  const [isLoading, setLoading] = useState(true);
+
+  return (
+    <>
+      <Image
+        alt={title}
+        src={`${imageSrc}.webp`}
+        width="1572"
+        height="983"
+        sizes={`(min-width:${theme.screens.md}) 384px, 100vw`}
+        layout="responsive"
+        // objectFit="cover"
+        className={cn(
+          'rounded-md duration-700 ease-in-out',
+          isLoading ? 'scale-110 blur-xl' : 'scale-100 blur-0'
+        )}
+        onLoadingComplete={() => setLoading(false)}
+      />
+    </>
+  );
+}
+
 const ExternalLink = ({ href, children }) => (
   <a
     className="text-gray-700 transition hover:text-gray-500"
@@ -23,15 +55,7 @@ const Project = ({ image, glink, link, title, description, index }) => {
             : 'w-full rounded shadow-xl md:order-1 md:w-6/12'
         }
       >
-        <Image
-          src={`${image}.webp`}
-          width="1572"
-          height="983"
-          sizes={`(min-width:${theme.screens.md}) 384px, 100vw`}
-          alt={title}
-          className="rounded-md"
-          layout="responsive"
-        />
+        <BlurImage imageSrc={image} title={title} />
       </div>
       <div className="flex flex-col w-full mx-1 mt-3 mb-1 space-y-3 overflow-auto md:w-5/12 ">
         <a
