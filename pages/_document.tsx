@@ -41,8 +41,8 @@ class MyDocument extends Document {
           <script
             async
             defer
-            data-website-id="7b7fb05a-0d26-4cb4-a774-d74a0f83998e"
-            src="https://umami.saurish.com/umami.js"
+            data-website-id="0dfa72d2-6a44-4d87-aff9-88803c2a5638"
+            src="https://umami-production-e355.up.railway.app/umami.js"
           ></script>
         </Head>
         <body className="text-white bg-white dark:bg-black dark:text-black">
