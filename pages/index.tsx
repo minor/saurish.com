@@ -14,7 +14,7 @@ export default function Home() {
         <title>Saurish Srivastava – Student, researcher, leader.</title>
         <meta name="robots" content="follow, index" />
         <meta
-          content="High school junior interested in philosophy, computational biology, and making a difference."
+          content="High school senior interested in philosophy, computational biology, and making a difference."
           name="description"
         />
         <meta property="og:url" content="https://saurish.com" />
@@ -26,7 +26,7 @@ export default function Home() {
         />
         <meta
           property="og:description"
-          content="High school junior interested in philosophy, computational biology, and making a difference."
+          content="High school senior interested in philosophy, computational biology, and making a difference."
         />
         <meta
           property="og:title"
@@ -44,7 +44,7 @@ export default function Home() {
         />
         <meta
           name="twitter:description"
-          content="High school junior interested in philosophy, computational biology, and making a difference."
+          content="High school senior interested in philosophy, computational biology, and making a difference."
         />
         <meta
           name="twitter:image"
@@ -52,14 +52,14 @@ export default function Home() {
         />
       </Head>
       <div className="flex flex-col items-center justify-center text-center bg-white dark:bg-black">
-        <h1 className="max-w-2xl mt-20 mb-8 text-4xl font-bold text-black md:mb-10 md:text-5xl dark:text-white">
+        <h1 className="max-w-2xl mt-20 mb-8 text-4xl font-bold text-black dark:text-white md:mb-10 md:text-5xl">
           Hey, I'm Saurish Srivastava
         </h1>
-        <p className="max-w-2xl mx-4 mb-8 text-xl text-gray-800 md:mx-0 dark:text-gray-400">
-          I’m a junior at{' '}
+        <p className="max-w-2xl mx-4 mb-8 text-xl text-gray-800 dark:text-gray-400 md:mx-0">
+          I’m a rising senior at{' '}
           <a
             href="https://evergreenvalleyhigh.esuhsd.org/"
-            className="underline text-link-blue dark:text-link-purple outer-glow"
+            className="underline outer-glow text-link-blue dark:text-link-purple"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -68,42 +68,42 @@ export default function Home() {
           interested in philosophy and computational biology.
         </p>
 
-        <div className="flex flex-row flex-wrap justify-center m-2 mb-10 space-x-4 text-center bg-white md:mb-10 md:m-0 gap-y-4 dark:bg-black">
+        <div className="flex flex-row flex-wrap justify-center m-2 mb-10 space-x-4 text-center bg-white gap-y-4 dark:bg-black md:m-0 md:mb-10">
           <Link href="/about">
-            <a className="px-2.5 py-1 text-lg text-gray-700 border hover:shadow-md border-gray-400 bg-transparent dark:hover:bg-gray-custom transition duration-200 rounded dark:text-gray-300 dark:border-gray-custom">
+            <a className="rounded border border-gray-400 bg-transparent px-2.5 py-1 text-lg text-gray-700 transition duration-200 hover:shadow-md dark:border-gray-custom dark:text-gray-300 dark:hover:bg-gray-custom">
               About
             </a>
           </Link>
           <Link href="/blog">
-            <a className="px-2.5 py-1 text-lg text-gray-700 border hover:shadow-md border-gray-400 bg-transparent dark:hover:bg-gray-custom transition duration-200 rounded dark:text-gray-300 dark:border-gray-custom">
+            <a className="rounded border border-gray-400 bg-transparent px-2.5 py-1 text-lg text-gray-700 transition duration-200 hover:shadow-md dark:border-gray-custom dark:text-gray-300 dark:hover:bg-gray-custom">
               Blog
             </a>
           </Link>
           <Link href="/#projects">
-            <a className="px-2.5 py-1 text-lg text-gray-700 border hover:shadow-md border-gray-400 bg-transparent dark:hover:bg-gray-custom transition duration-200 rounded dark:text-gray-300 dark:border-gray-custom">
+            <a className="rounded border border-gray-400 bg-transparent px-2.5 py-1 text-lg text-gray-700 transition duration-200 hover:shadow-md dark:border-gray-custom dark:text-gray-300 dark:hover:bg-gray-custom">
               Projects
             </a>
           </Link>
           <Link href="/#skills">
-            <a className="px-2.5 py-1 text-lg text-gray-700 border hover:shadow-md border-gray-400 bg-transparent dark:hover:bg-gray-custom transition duration-200 rounded dark:text-gray-300 dark:border-gray-custom">
+            <a className="rounded border border-gray-400 bg-transparent px-2.5 py-1 text-lg text-gray-700 transition duration-200 hover:shadow-md dark:border-gray-custom dark:text-gray-300 dark:hover:bg-gray-custom">
               Skills
             </a>
           </Link>
           <Link href="/#subscribe">
-            <a className="px-2.5 py-1 text-lg text-gray-700 border hover:shadow-md border-gray-400 bg-transparent dark:hover:bg-gray-custom transition duration-200 rounded dark:text-gray-300 dark:border-gray-custom">
+            <a className="rounded border border-gray-400 bg-transparent px-2.5 py-1 text-lg text-gray-700 transition duration-200 hover:shadow-md dark:border-gray-custom dark:text-gray-300 dark:hover:bg-gray-custom">
               Newsletter
             </a>
           </Link>
           <Link href="/#connect">
-            <a className="px-2.5 py-1 text-lg text-gray-700 border hover:shadow-md border-gray-400 bg-transparent dark:hover:bg-gray-custom transition duration-200 rounded dark:text-gray-300 dark:border-gray-custom">
+            <a className="rounded border border-gray-400 bg-transparent px-2.5 py-1 text-lg text-gray-700 transition duration-200 hover:shadow-md dark:border-gray-custom dark:text-gray-300 dark:hover:bg-gray-custom">
               Connect
             </a>
           </Link>
         </div>
-        <div className="w-5/6 h-[0.125rem] rounded max-w-2xl mb-10 md:max-w-3xl md:w-full animate-gradient-x color-bg" />
+        <div className="color-bg mb-10 h-[0.125rem] w-5/6 max-w-2xl animate-gradient-x rounded md:w-full md:max-w-3xl" />
         <section id="projects" className="mb-10">
           <div className="flex items-center justify-center mb-6">
-            <div className="flex items-center w-[2.1875rem] h-[2.1875rem] justify-center mr-5 border border-gray-400 rounded-full dark:border-gray-custom md:mr-3">
+            <div className="mr-5 flex h-[2.1875rem] w-[2.1875rem] items-center justify-center rounded-full border border-gray-400 dark:border-gray-custom md:mr-3">
               <h2 className="font-bold text-gray-800 dark:text-gray-200">1</h2>
             </div>
             <h1 className="text-2xl font-medium text-gray-800 underline dark:text-gray-200">
@@ -111,7 +111,7 @@ export default function Home() {
             </h1>
           </div>
           <div className="max-w-2xl md:max-w-3xl">
-            <p className="mx-4 mb-12 text-lg text-center text-gray-700 md:mx-0 dark:text-gray-400">
+            <p className="mx-4 mb-12 text-lg text-center text-gray-700 dark:text-gray-400 md:mx-0">
               I've mostly pursued independent projects – I love exploring and
               solving problems. These are some of my most notable projects.
             </p>
@@ -122,7 +122,7 @@ export default function Home() {
         </section>
         <section id="skills" className="mb-20">
           <div className="flex items-center justify-center mb-6">
-            <div className="flex items-center w-[2.1875rem] h-[2.1875rem] justify-center mr-5 border border-gray-400 rounded-full dark:border-gray-custom md:mr-3">
+            <div className="mr-5 flex h-[2.1875rem] w-[2.1875rem] items-center justify-center rounded-full border border-gray-400 dark:border-gray-custom md:mr-3">
               <h2 className="font-bold text-gray-800 dark:text-gray-200">2</h2>
             </div>
             <h1 className="text-2xl font-medium text-gray-800 underline dark:text-gray-200">
@@ -130,7 +130,7 @@ export default function Home() {
             </h1>
           </div>
           <div className="max-w-2xl md:max-w-3xl">
-            <p className="mx-4 mb-12 text-lg text-center text-gray-700 md:mx-0 dark:text-gray-400">
+            <p className="mx-4 mb-12 text-lg text-center text-gray-700 dark:text-gray-400 md:mx-0">
               I love web development & also love dabbling with random scripts
               and machine learning models with Python. I'm currently exploring
               convolutional neural networks and their relevance to the
@@ -141,7 +141,7 @@ export default function Home() {
         </section>
         <section id="subscribe" className="mb-10">
           <div className="flex items-center justify-center mb-6">
-            <div className="flex items-center w-[2.1875rem] h-[2.1875rem] justify-center mr-5 border border-gray-400 rounded-full dark:border-gray-custom md:mr-3">
+            <div className="mr-5 flex h-[2.1875rem] w-[2.1875rem] items-center justify-center rounded-full border border-gray-400 dark:border-gray-custom md:mr-3">
               <h2 className="font-bold text-gray-800 dark:text-gray-200">3</h2>
             </div>
             <h1 className="text-2xl font-medium text-gray-800 underline dark:text-gray-200">
@@ -158,7 +158,7 @@ export default function Home() {
         </section>
         <section id="connect" className="mb-10">
           <div className="flex items-center justify-center mb-6">
-            <div className="flex items-center w-[2.1875rem] h-[2.1875rem] justify-center mr-5 border border-gray-400 rounded-full dark:border-gray-custom md:mr-3">
+            <div className="mr-5 flex h-[2.1875rem] w-[2.1875rem] items-center justify-center rounded-full border border-gray-400 dark:border-gray-custom md:mr-3">
               <h2 className="font-bold text-gray-800 dark:text-gray-200">4</h2>
             </div>
             <h1 className="text-2xl font-medium text-gray-800 underline dark:text-gray-200">
@@ -167,7 +167,7 @@ export default function Home() {
           </div>
           <div className="max-w-2xl md:max-w-2xl">
             <Connect />
-            <p className="mx-4 mb-12 text-lg text-center text-gray-700 md:mx-0 dark:text-gray-400">
+            <p className="mx-4 mb-12 text-lg text-center text-gray-700 dark:text-gray-400 md:mx-0">
               If you want to get in touch with me directly, please send an email
               to{' '}
               <a

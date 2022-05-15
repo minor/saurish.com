@@ -20,9 +20,9 @@ export default function About() {
         <br />
         <div className="max-w-2xl md:max-w-3xl">
           <p className="mx-2 mb-8 text-left text-gray-700 text-md dark:text-gray-400 md:mx-0 md:mb-12 md:text-lg">
-            Hey there! I'm Saurish Srivastava. I'm a junior at{' '}
+            Hey there! I'm Saurish Srivastava. I'm a rising senior at{' '}
             <a
-              href="https://evhs.schoolloop.com/"
+              href="https://evergreenvalleyhigh.esuhsd.org/"
               className="underline text-link-blue dark:text-link-purple"
               target="_blank"
               rel="noopener noreferrer"

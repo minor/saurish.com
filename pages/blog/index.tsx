@@ -1,4 +1,5 @@
-import Head from 'next/head';
+import { useState } from 'react';
+
 import Link from 'next/link';
 import Layout from '../../components/Layout';
 import { getDatabase } from '../../lib/notion';
@@ -6,7 +7,12 @@ import { Text } from './[slug]';
 
 export const databaseId = process.env.NOTION_DATABASE_ID;
 
-export default function Home({ posts }) {
+export default function Blog({ posts }) {
+  const [searchValue, setSearchValue] = useState('');
+  const filteredBlogPosts = posts.filter((post) =>
+    post.title.toLowerCase().includes(searchValue.toLowerCase())
+  );
+
   return (
     <Layout
       title="Blog | Saurish"

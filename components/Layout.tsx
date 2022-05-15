@@ -16,7 +16,7 @@ export default function Layout(props) {
   const { children, ...customMeta } = props;
   const meta = {
     title: 'Saurish Srivastava – Student, researcher, leader.',
-    description: `High school junior interested in philosophy, computational biology, and making a difference.`,
+    description: `High school senior interested in philosophy, computational biology, and making a difference.`,
     image: 'https://saurish.com/static/favicons/send.png',
     type: 'website',
     ...customMeta
@@ -50,28 +50,28 @@ export default function Layout(props) {
           <meta property="article:published_time" content={meta.date} />
         )}
       </Head>
-      <nav className="flex items-center justify-between w-full max-w-4xl px-8 py-8 mx-auto mb-4 text-gray-900 bg-white md:py-2 sticky-nav md:mt-8 dark:bg-black bg-opacity-60 dark:text-gray-100">
+      <nav className="flex items-center justify-between w-full max-w-4xl px-8 py-8 mx-auto mb-4 text-gray-900 bg-white sticky-nav bg-opacity-60 dark:bg-black dark:text-gray-100 md:mt-8 md:py-2">
         <a href="#skip" className="skip-nav">
           Skip to content
         </a>
         <Link href="/">
-          <a className="p-1 text-2xl font-bold text-gray-900 hover:text-gray-500 dark:hover:text-gray-500 dark:text-gray-100 sm:p-4">
+          <a className="p-1 text-2xl font-bold text-gray-900 hover:text-gray-500 dark:text-gray-100 dark:hover:text-gray-500 sm:p-4">
             S
           </a>
         </Link>
         <div>
           <Link href="/">
-            <a className="p-1 text-gray-900 sm:p-4 dark:text-gray-100 hover:text-gray-500 dark:hover:text-gray-500">
+            <a className="p-1 text-gray-900 hover:text-gray-500 dark:text-gray-100 dark:hover:text-gray-500 sm:p-4">
               Home
             </a>
           </Link>
           <Link href="/about">
-            <a className="p-1 text-gray-900 sm:p-4 dark:text-gray-100 hover:text-gray-500 dark:hover:text-gray-500">
+            <a className="p-1 text-gray-900 hover:text-gray-500 dark:text-gray-100 dark:hover:text-gray-500 sm:p-4">
               About
             </a>
           </Link>
           <Link href="/blog">
-            <a className="p-1 text-gray-900 sm:p-4 dark:text-gray-100 hover:text-gray-500 dark:hover:text-gray-500">
+            <a className="p-1 text-gray-900 hover:text-gray-500 dark:text-gray-100 dark:hover:text-gray-500 sm:p-4">
               Blog
             </a>
           </Link>
