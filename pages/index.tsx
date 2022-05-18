@@ -52,7 +52,7 @@ export default function Home() {
         />
       </Head>
       <div className="flex flex-col items-center justify-center text-center bg-white dark:bg-black">
-        <h1 className="max-w-2xl mt-20 mb-8 text-4xl font-bold text-black dark:text-white md:mb-10 md:text-5xl">
+        <h1 className="max-w-2xl mt-20 mb-8 text-4xl font-semibold text-black dark:text-white md:mb-10 md:text-5xl">
           Hey, I'm Saurish Srivastava
         </h1>
         <p className="max-w-2xl mx-4 mb-8 text-xl text-gray-800 dark:text-gray-400 md:mx-0">
@@ -167,7 +167,7 @@ export default function Home() {
           </div>
           <div className="max-w-2xl md:max-w-2xl">
             <Connect />
-            <p className="mx-4 mb-12 text-lg text-center text-gray-700 dark:text-gray-400 md:mx-0">
+            <p className="mx-4 mb-4 text-lg text-center text-gray-700 dark:text-gray-400 md:mx-0">
               If you want to get in touch with me directly, please send an email
               to{' '}
               <a
