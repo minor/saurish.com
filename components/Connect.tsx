@@ -62,7 +62,7 @@ export default function Connect() {
                   name="name"
                   onChange={(e) => setName(e.target.value)}
                   required
-                  className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-opacity-50 border border-gray-400 rounded outline-none bg-white-skills dark:text-gray-400 dark:bg-black dark:focus:border-gray-300 dark:border-gray-custom focus:border-black focus:bg-white"
+                  className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-opacity-50 border border-gray-400 rounded outline-none bg-white-skills focus:border-black focus:bg-white dark:border-gray-custom dark:bg-black dark:text-gray-400 dark:focus:border-gray-300"
                 />
               </div>
             </div>
@@ -80,7 +80,7 @@ export default function Connect() {
                   name="email"
                   onChange={(e) => setEmail(e.target.value)}
                   required
-                  className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-opacity-50 border border-gray-400 rounded outline-none bg-white-skills dark:text-gray-400 dark:bg-black dark:focus:border-gray-300 dark:border-gray-custom focus:border-black focus:bg-white"
+                  className="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-opacity-50 border border-gray-400 rounded outline-none bg-white-skills focus:border-black focus:bg-white dark:border-gray-custom dark:bg-black dark:text-gray-400 dark:focus:border-gray-300"
                 />
               </div>
             </div>
@@ -97,14 +97,14 @@ export default function Connect() {
                   name="message"
                   onChange={(e) => setMessage(e.target.value)}
                   required
-                  className="w-full h-32 px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-opacity-50 border border-gray-400 rounded outline-none resize-none bg-white-skills dark:text-gray-400 dark:bg-black dark:focus:border-gray-300 dark:border-gray-custom focus:border-black focus:bg-white"
+                  className="w-full h-32 px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-opacity-50 border border-gray-400 rounded outline-none resize-none bg-white-skills focus:border-black focus:bg-white dark:border-gray-custom dark:bg-black dark:text-gray-400 dark:focus:border-gray-300"
                 ></textarea>
               </div>
             </div>
             <div className="w-full p-2">
               <button
                 type="submit"
-                className="flex px-5 py-1.5 mx-auto text-lg text-gray-100 transition duration-200 bg-gray-800 border-0 rounded focus:outline-none hover:bg-black dark:bg-gray-200 dark:text-gray-900 dark:hover:bg-white"
+                className="text-md focus:outline-none mx-auto flex rounded border-0 bg-gray-800 px-5 py-1.5 text-gray-200 transition duration-200 hover:bg-black dark:bg-gray-200 dark:text-gray-800 dark:hover:bg-white"
               >
                 Send
               </button>
