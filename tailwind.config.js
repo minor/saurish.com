@@ -1,4 +1,4 @@
-const { spacing, fontFamily } = require('tailwindcss/defaultTheme');
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   mode: 'jit',
@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', ...fontFamily.sans],
+        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
         manrope: 'Manrope'
       },
       spacing: {
