@@ -156,7 +156,7 @@ export default function Projects() {
       />
       <Project
         image="/images/dialexicon"
-        glink="https://github.com/minor/dialexicon/"
+        glink="https://github.com/minor/dialexicon.org/"
         link="https://dialexicon.org"
         title="Dialexicon"
         index={true}
