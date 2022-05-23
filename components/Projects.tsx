@@ -57,21 +57,21 @@ const Project = ({ image, glink, link, title, description, index }) => {
       >
         <BlurImage imageSrc={image} title={title} />
       </div>
-      <div className="flex flex-col w-full mx-1 mt-3 mb-1 space-y-3 overflow-auto md:w-5/12 ">
+      <div className="mx-1 mt-3 mb-1 flex w-full flex-col space-y-3 overflow-auto md:w-5/12 ">
         <a
           href={link}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-lg font-medium underline text-link-blue dark:text-link-purple"
+          className="text-lg font-medium text-link-blue underline hover:text-link-blue-hover dark:text-link-purple dark:hover:text-link-purple-hover"
         >
           {title}
         </a>
         <p className="text-gray-500">{description}</p>
-        <div className="flex justify-center w-auto space-x-4">
+        <div className="flex w-auto justify-center space-x-4">
           <div className="flex">
             <ExternalLink href={glink}>
               <span className="sr-only">Github</span>
-              <svg className="w-5 h-5" viewBox="0 0 24 24">
+              <svg className="h-5 w-5" viewBox="0 0 24 24">
                 <g
                   fill="none"
                   stroke="currentColor"
@@ -87,7 +87,7 @@ const Project = ({ image, glink, link, title, description, index }) => {
           <div className="flex">
             <ExternalLink href={link}>
               <span className="sr-only">Link</span>
-              <svg className="w-5 h-5" viewBox="0 0 24 24">
+              <svg className="h-5 w-5" viewBox="0 0 24 24">
                 <g
                   fill="none"
                   stroke="currentColor"
@@ -167,12 +167,12 @@ export default function Projects() {
       ) : (
         <button
           type="button"
-          className="flex items-center px-4 py-2 mx-auto my-4 text-sm font-medium text-gray-900 rounded-md dark:text-gray-100"
+          className="mx-auto my-4 flex items-center rounded-md px-4 py-2 text-sm font-medium text-gray-900 dark:text-gray-100"
           onClick={() => showFullProjects(true)}
         >
           See More
           <svg
-            className="w-4 h-4 ml-1"
+            className="ml-1 h-4 w-4"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -190,12 +190,12 @@ export default function Projects() {
       {isShowingFullProjects ? (
         <button
           type="button"
-          className="flex items-center px-4 py-2 mx-auto my-4 text-sm text-gray-800 rounded-md dark:text-gray-200"
+          className="mx-auto my-4 flex items-center rounded-md px-4 py-2 text-sm text-gray-800 dark:text-gray-200"
           onClick={() => showFullProjects(false)}
         >
           See Less
           <svg
-            className="w-4 h-4 ml-1"
+            className="ml-1 h-4 w-4"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"

@@ -38,6 +38,10 @@ class MyDocument extends Document {
           />
           <meta content="#ffffff" name="theme-color" />
           <meta content="#ffffff" name="msapplication-TileColor" />
+          <meta
+            content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+            name="robots"
+          />
           <script
             async
             defer

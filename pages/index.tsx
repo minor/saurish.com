@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Skills from '../components/Skills';
 import Projects from '../components/Projects';
 import Connect from '../components/Connect';
-import Subscribe from '../components/Subscribe';
+// import Subscribe from '../components/Subscribe';
 
 export default function Home() {
   return (
@@ -79,6 +79,11 @@ export default function Home() {
               Blog
             </a>
           </Link>
+          <Link href="/wallpapers">
+            <a className="rounded border border-gray-400 bg-transparent px-2.5 py-1 text-lg text-gray-700 transition duration-200 hover:shadow-md dark:border-gray-custom dark:text-gray-300 dark:hover:bg-gray-custom">
+              Wallpapers
+            </a>
+          </Link>
           <Link href="/#projects">
             <a className="rounded border border-gray-400 bg-transparent px-2.5 py-1 text-lg text-gray-700 transition duration-200 hover:shadow-md dark:border-gray-custom dark:text-gray-300 dark:hover:bg-gray-custom">
               Projects
@@ -87,11 +92,6 @@ export default function Home() {
           <Link href="/#skills">
             <a className="rounded border border-gray-400 bg-transparent px-2.5 py-1 text-lg text-gray-700 transition duration-200 hover:shadow-md dark:border-gray-custom dark:text-gray-300 dark:hover:bg-gray-custom">
               Skills
-            </a>
-          </Link>
-          <Link href="/#subscribe">
-            <a className="rounded border border-gray-400 bg-transparent px-2.5 py-1 text-lg text-gray-700 transition duration-200 hover:shadow-md dark:border-gray-custom dark:text-gray-300 dark:hover:bg-gray-custom">
-              Newsletter
             </a>
           </Link>
           <Link href="/#connect">
@@ -139,7 +139,7 @@ export default function Home() {
             <Skills />
           </div>
         </section>
-        <section id="subscribe" className="mb-10">
+        {/* <section id="subscribe" className="mb-10">
           <div className="flex items-center justify-center mb-6">
             <div className="mr-5 flex h-[2.1875rem] w-[2.1875rem] items-center justify-center rounded-full border border-gray-400 dark:border-gray-custom md:mr-3">
               <h2 className="font-bold text-gray-800 dark:text-gray-200">3</h2>
@@ -149,17 +149,17 @@ export default function Home() {
             </h1>
           </div>
           <div className="max-w-2xl md:max-w-2xl">
-            {/* <p className="mx-4 mb-12 text-lg text-center text-gray-700 md:mx-0 dark:text-gray-400">
+            <p className="mx-4 mb-12 text-lg text-center text-gray-700 md:mx-0 dark:text-gray-400">
               Get updates on weekly blog posts, reseach I've done, and more.
               Delivered twice a month. Unsubscribe anytime.
-            </p> */}
+            </p>
             <Subscribe />
           </div>
-        </section>
+        </section> */}
         <section id="connect" className="mb-10">
           <div className="flex items-center justify-center mb-6">
             <div className="mr-5 flex h-[2.1875rem] w-[2.1875rem] items-center justify-center rounded-full border border-gray-400 dark:border-gray-custom md:mr-3">
-              <h2 className="font-bold text-gray-800 dark:text-gray-200">4</h2>
+              <h2 className="font-bold text-gray-800 dark:text-gray-200">3</h2>
             </div>
             <h1 className="text-2xl font-medium text-gray-800 underline dark:text-gray-200">
               Connect
@@ -172,7 +172,7 @@ export default function Home() {
               to{' '}
               <a
                 href="mailto:me@saurish.com?subject=Hey from the Website!"
-                className="underline text-link-blue dark:text-link-purple"
+                className="underline text-link-blue hover:text-link-blue-hover dark:text-link-purple dark:hover:text-link-purple-hover"
                 target="_blank"
                 rel="noopener noreferrer"
               >

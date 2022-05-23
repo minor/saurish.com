@@ -23,7 +23,7 @@ export default function About() {
             Hey there! I'm Saurish Srivastava. I'm a rising senior at{' '}
             <a
               href="https://evergreenvalleyhigh.esuhsd.org/"
-              className="underline text-link-blue dark:text-link-purple"
+              className="underline text-link-blue hover:text-link-blue-hover dark:text-link-purple dark:hover:text-link-purple-hover"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -40,7 +40,7 @@ export default function About() {
             shots on my{' '}
             <a
               href="https://unsplash.com/@saurishs/"
-              className="underline text-link-blue dark:text-link-purple"
+              className="underline text-link-blue hover:text-link-blue-hover dark:text-link-purple dark:hover:text-link-purple-hover"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -55,7 +55,7 @@ export default function About() {
             <a
               href="https://hsld.debatecoaches.org/Evergreen%20Valley/Srivastava%20Neg"
               target="_blank"
-              className="underline text-link-blue dark:text-link-purple"
+              className="underline text-link-blue hover:text-link-blue-hover dark:text-link-purple dark:hover:text-link-purple-hover"
               rel="noopener noreferrer"
             >
               arguments
@@ -68,7 +68,7 @@ export default function About() {
             <a
               href="https://dialexicon.org/"
               target="_blank"
-              className="underline text-link-blue dark:text-link-purple"
+              className="underline text-link-blue hover:text-link-blue-hover dark:text-link-purple dark:hover:text-link-purple-hover"
               rel="noopener noreferrer"
             >
               Dialexicon
@@ -81,7 +81,7 @@ export default function About() {
             <a
               href="https://envisionnew.org/"
               target="_blank"
-              className="underline text-link-blue dark:text-link-purple"
+              className="underline text-link-blue hover:text-link-blue-hover dark:text-link-purple dark:hover:text-link-purple-hover"
               rel="noopener noreferrer"
             >
               Project enVision U.S.
@@ -92,7 +92,7 @@ export default function About() {
             <a
               href="https://ataraxiahealth.org/"
               target="_blank"
-              className="underline text-link-blue dark:text-link-purple"
+              className="underline text-link-blue hover:text-link-blue-hover dark:text-link-purple dark:hover:text-link-purple-hover"
               rel="noopener noreferrer"
             >
               Ataraxia

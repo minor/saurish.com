@@ -15,7 +15,9 @@ module.exports = {
       },
       colors: {
         'link-blue': '#3B719F',
+        'link-blue-hover': "#305c82",
         'link-purple': '#8F8CE7',
+        'link-purple-hover': '#7975e2',
         'gray-custom': '#474747',
         'gray-skills': '#111111',
         'white-skills': '#EEEEEE'

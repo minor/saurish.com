@@ -5,7 +5,7 @@ import NowPlaying from './NowPlaying';
 
 const ExternalLink = ({ href, children }) => (
   <a
-    className="p-1 text-base text-gray-500 transition sm:p-4 hover:text-gray-700"
+    className="p-1 text-base text-gray-500 transition hover:text-gray-700 sm:p-4"
     target="_blank"
     rel="noopener noreferrer"
     href={href}
@@ -16,7 +16,7 @@ const ExternalLink = ({ href, children }) => (
 
 const Divider = () => {
   return (
-    <div className="w-5/6 border border-gray-400 md:w-1/4 dark:border-gray-custom" />
+    <div className="w-5/6 border border-gray-400 dark:border-gray-custom md:w-1/4" />
   );
 };
 
@@ -68,39 +68,39 @@ export default function Footer() {
       <Divider />
       <br className="sm:hidden" />
       <div className="bg-white dark:bg-black">
-        <nav className="flex flex-wrap items-center justify-center w-full max-w-5xl mx-auto my-0 space-x-1 bg-white gap-y-1 md:space-x-0 lg:space-x-0 md:mt-4 dark:bg-black bg-opacity-60">
+        <nav className="flex flex-wrap items-center justify-center w-full max-w-5xl mx-auto my-0 space-x-1 bg-white gap-y-1 bg-opacity-60 dark:bg-black md:mt-4 md:space-x-0 lg:space-x-0">
           <Link href="/">
-            <a className="p-1 text-gray-900 sm:p-4 hover:text-gray-500 dark:hover:text-gray-500 dark:text-gray-100">
+            <a className="p-1 text-gray-900 hover:text-gray-500 dark:text-gray-100 dark:hover:text-gray-500 sm:p-4">
               Home
             </a>
           </Link>
           <Link href="/about">
-            <a className="p-1 text-gray-900 sm:p-4 hover:text-gray-500 dark:hover:text-gray-500 dark:text-gray-100">
+            <a className="p-1 text-gray-900 hover:text-gray-500 dark:text-gray-100 dark:hover:text-gray-500 sm:p-4">
               About
             </a>
           </Link>
           <Link href="/blog">
-            <a className="p-1 text-gray-900 sm:p-4 hover:text-gray-500 dark:hover:text-gray-500 dark:text-gray-100">
+            <a className="p-1 text-gray-900 hover:text-gray-500 dark:text-gray-100 dark:hover:text-gray-500 sm:p-4">
               Blog
             </a>
           </Link>
+          <Link href="/wallpapers">
+            <a className="p-1 text-gray-900 hover:text-gray-500 dark:text-gray-100 dark:hover:text-gray-500 sm:p-4">
+              Wallpapers
+            </a>
+          </Link>
           <Link href="/#projects">
-            <a className="p-1 text-gray-900 sm:p-4 hover:text-gray-500 dark:hover:text-gray-500 dark:text-gray-100">
+            <a className="p-1 text-gray-900 hover:text-gray-500 dark:text-gray-100 dark:hover:text-gray-500 sm:p-4">
               Projects
             </a>
           </Link>
           <Link href="/#skills">
-            <a className="p-1 text-gray-900 sm:p-4 hover:text-gray-500 dark:hover:text-gray-500 dark:text-gray-100">
+            <a className="p-1 text-gray-900 hover:text-gray-500 dark:text-gray-100 dark:hover:text-gray-500 sm:p-4">
               Skills
             </a>
           </Link>
-          <Link href="/#subscribe">
-            <a className="p-1 text-gray-900 sm:p-4 hover:text-gray-500 dark:hover:text-gray-500 dark:text-gray-100">
-              Newsletter
-            </a>
-          </Link>
           <Link href="/#connect">
-            <a className="p-1 text-gray-900 sm:p-4 hover:text-gray-500 dark:hover:text-gray-500 dark:text-gray-100">
+            <a className="p-1 text-gray-900 hover:text-gray-500 dark:text-gray-100 dark:hover:text-gray-500 sm:p-4">
               Connect
             </a>
           </Link>

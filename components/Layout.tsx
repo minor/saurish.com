@@ -75,6 +75,11 @@ export default function Layout(props) {
               Blog
             </a>
           </Link>
+          <Link href="/wallpapers">
+            <a className="p-1 text-gray-900 hover:text-gray-500 dark:text-gray-100 dark:hover:text-gray-500 sm:p-4">
+              Wallpapers
+            </a>
+          </Link>
         </div>
       </nav>
       <main
