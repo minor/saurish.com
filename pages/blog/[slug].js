@@ -24,7 +24,7 @@ export const Text = ({ text }) => {
         className={[
           bold ? 'font-bold' : '',
           code
-            ? 'text-purple-500 dark:text-purple-400 px-1 py-0.75 border border-gray-200 dark:border-gray-800 rounded-md bg-gray-100 dark:bg-gray-900'
+            ? 'rounded-md border border-gray-200 bg-gray-100 px-1 py-0.75 text-purple-500 dark:border-gray-800 dark:bg-gray-900 dark:text-purple-400'
             : '',
           italic ? 'italic' : '',
           strikethrough ? 'line-through' : '',
@@ -34,7 +34,7 @@ export const Text = ({ text }) => {
       >
         {text.link ? (
           <a
-            className="max-w-4xl underline break-all text-link-blue dark:text-link-purple"
+            className="max-w-4xl underline break-all text-link-blue hover:text-link-blue-hover dark:text-link-purple dark:hover:text-link-purple-hover"
             href={text.link.url}
             target="_blank"
             rel="noopener noreferrer"
@@ -62,7 +62,7 @@ const renderBlock = (block) => {
       );
     case 'heading_1':
       return (
-        <h1 className="my-4 text-3xl font-bold prose text-black md:text-4xl dark:text-white">
+        <h1 className="my-4 text-3xl font-bold prose text-black dark:text-white md:text-4xl">
           <Text text={value.text} />
         </h1>
       );
@@ -178,7 +178,7 @@ export default function Post({ page, blocks }) {
       type="article"
     >
       <article className="flex flex-col items-start justify-center w-full max-w-2xl mx-auto mb-16">
-        <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
+        <h1 className="mb-4 text-3xl font-bold tracking-tight text-black dark:text-white md:text-5xl">
           {page.properties.Name.title[0].plain_text}
         </h1>
         <div className="flex flex-col items-start justify-between w-full mt-2 mb-10 md:flex-row md:items-center">
@@ -200,7 +200,7 @@ export default function Post({ page, blocks }) {
               })}
             </p>
           </div>
-          <p className="mt-2 text-sm text-gray-600 dark:text-gray-400 min-w-32 md:mt-0">
+          <p className="mt-2 text-sm text-gray-600 min-w-32 dark:text-gray-400 md:mt-0">
             {page.properties.ReadTime.rich_text[0].plain_text} min read{' • '}
             {<PageViews slug={slugPage} />}
           </p>
