@@ -160,7 +160,7 @@ export default function Projects() {
         link="https://dialexicon.org"
         title="Dialexicon"
         index={true}
-        description="I'm one of the presidents of Dialexicon, a global non-profit organization that serves as a platform for high school students to learn, discuss, and contribute to philosophical thought and writing. At Dialexicon, we value deep reflections of society – namely education – and create modes of empathy to explore intersectionality."
+        description="I'm a President of Dialexicon, a global non-profit organization that serves as a platform for high school students to learn, discuss, and contribute to philosophical thought and writing. At Dialexicon, we value deep reflections of society – namely education – and create modes of empathy to explore intersectionality."
       />
       {isShowingFullProjects ? (
         <FullProjects />
