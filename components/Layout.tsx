@@ -76,7 +76,7 @@ export default function Layout(props) {
             </a>
           </Link>
           <a
-            href="saurish.substack.com/?utm_source=saurish"
+            href="https://saurish.substack.com/?utm_source=saurish"
             target="_blank"
             className="p-1 text-gray-900 hover:text-gray-500 dark:text-gray-100 dark:hover:text-gray-500 sm:p-4"
           >

@@ -79,11 +79,13 @@ export default function Home() {
               Blog
             </a>
           </Link>
-          <Link href="/wallpapers">
-            <a className="rounded border border-gray-400 bg-transparent px-2.5 py-1 text-lg text-gray-700 transition duration-200 hover:shadow-md dark:border-gray-custom dark:text-gray-300 dark:hover:bg-gray-custom">
-              Wallpapers
-            </a>
-          </Link>
+          <a
+            href="https://saurish.substack.com/?utm_source=saurish"
+            target="_blank"
+            className="rounded border border-gray-400 bg-transparent px-2.5 py-1 text-lg text-gray-700 transition duration-200 hover:shadow-md dark:border-gray-custom dark:text-gray-300 dark:hover:bg-gray-custom"
+          >
+            Newsletter
+          </a>
           <Link href="/#projects">
             <a className="rounded border border-gray-400 bg-transparent px-2.5 py-1 text-lg text-gray-700 transition duration-200 hover:shadow-md dark:border-gray-custom dark:text-gray-300 dark:hover:bg-gray-custom">
               Projects
