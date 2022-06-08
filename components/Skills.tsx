@@ -38,7 +38,7 @@ export default function Skills() {
           Javascript
         </h3>
         <p className="mt-1 text-left text-gray-700 dark:text-gray-400">
-          Programming Language [1 year]
+          Programming Language [2 years]
         </p>
       </div>
       <div className="w-full p-4 bg-gray-200 rounded dark:bg-gray-skills">
