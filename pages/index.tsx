@@ -65,7 +65,7 @@ export default function Home() {
           >
             Evergreen Valley High School
           </a>{' '}
-          interested in philosophy and computational biology.
+          interested in philosophy and computational neuroscience.
         </p>
 
         <div className="flex flex-row flex-wrap justify-center m-2 mb-10 space-x-4 text-center bg-white gap-y-4 dark:bg-black md:m-0 md:mb-10">
