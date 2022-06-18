@@ -36,19 +36,6 @@ export default function About() {
             intersection of biology and computer science.
             <br />
             <br />
-            I'm a hobbyist photographer (mostly nature). You can see some of my
-            shots on my{' '}
-            <a
-              href="https://unsplash.com/@saurishs/"
-              className="underline text-link-blue hover:text-link-blue-hover dark:text-link-purple dark:hover:text-link-purple-hover"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Unsplash page
-            </a>
-            .
-            <br />
-            <br />
             I'm also an avid debater! I have qualified to the Tournament of
             Champions in both Varsity Lincoln Douglas and Varsity Public Forum.
             I read a variety of different{' '}
@@ -61,10 +48,8 @@ export default function About() {
               arguments
             </a>{' '}
             and mostly engage in critical literature and philosophical bases.
-            <br />
-            <br />
-            Because I love reading and discussing philosophy, I am the
-            vice-president of{' '}
+            And because I love reading and discussing philosophy, I am the
+            president of{' '}
             <a
               href="https://dialexicon.org/"
               target="_blank"
@@ -73,8 +58,16 @@ export default function About() {
             >
               Dialexicon
             </a>{' '}
-            where I organize a weekly discussion of philosophy and lead a high
-            school student journal.
+            where I organize weekly philosophy discussions,{' '}
+            <a
+              href="https://dialexicon.org/podcast"
+              target="_blank"
+              className="underline text-link-blue hover:text-link-blue-hover dark:text-link-purple dark:hover:text-link-purple-hover"
+              rel="noopener noreferrer"
+            >
+              run a podcast
+            </a>
+            , and lead a high school student journal.
             <br />
             <br />
             I’m the president and executive director at{' '}
@@ -111,8 +104,8 @@ export default function About() {
                 'rounded-lg duration-700 ease-in-out',
                 isLoading ? 'scale-110 blur-xl' : 'scale-100 blur-0'
               )}
-              height={1008}
-              width={756}
+              height={3436}
+              width={3265}
               layout="responsive"
               onLoadingComplete={() => setLoading(false)}
             />
