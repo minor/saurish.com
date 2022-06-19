@@ -19,8 +19,8 @@ function BlurImage({ imageSrc, title }) {
       <Image
         alt={title}
         src={`${imageSrc}.webp`}
-        width="1572"
-        height="983"
+        width="2246"
+        height="1376"
         sizes={`(min-width:${theme.screens.md}) 384px, 100vw`}
         layout="responsive"
         // objectFit="cover"
@@ -109,27 +109,26 @@ const Project = ({ image, glink, link, title, description, index }) => {
 const FullProjects = () => (
   <>
     <Project
+      image="/images/uranium"
+      glink="https://saurish.gumroad.com/l/uranium"
+      link="https://saurish.gumroad.com/l/uranium"
+      title="Uranium"
+      index={false}
+      description="Uranium is a premium website template built with Next.js and styled with TailwindCSS. It is beautifully designed and comes with its own type-writer effect with Typed.js."
+    />
+    <Project
       image="/images/plutonium"
       glink="https://github.com/minor/plutonium/"
       link="https://plutonium.saurish.com"
       title="Plutonium"
-      index={false}
+      index={true}
       description="Plutonium is a free template for businesses built with Next.js 11 and styled with TailwindCSS. It comes with built in dark-mode support & blazing fast speeds."
     />
-    {/* <Project
-      image="/images/c2cmha"
-      glink="https://github.com/minor/english-project"
-      link="https://c2cmha.vercel.app/"
-      title="Coast-to-Coast Mental Health Awareness"
-      index={true}
-      description="This website was a theoretical project for school with no firm plans. I utilized it to exhibit my designing skills. If you are interested in reaching out to an organization that is dedicated to promoting neurodiversity, please check out Ataraxia from Project enVision U.S."
-    /> */}
   </>
 );
 
 export default function Projects() {
   const [isShowingFullProjects, showFullProjects] = useState(false);
-
   return (
     <>
       <Project
