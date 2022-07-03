@@ -186,7 +186,7 @@ export default function Home() {
                 rel="noopener noreferrer"
               >
                 Twitter
-              </a>{' '}
+              </a>
               .
             </p>
           </div>
