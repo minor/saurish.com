@@ -175,11 +175,18 @@ export default function Home() {
               <a
                 href="mailto:me@saurish.com?subject=Hey from the Website!"
                 className="underline text-link-blue hover:text-link-blue-hover dark:text-link-purple dark:hover:text-link-purple-hover"
-                target="_blank"
                 rel="noopener noreferrer"
               >
                 me@saurish.com
-              </a>
+              </a>{' '}
+              or reach out on{' '}
+              <a
+                href="https://twitter.com/saurishhh"
+                className="underline text-link-blue hover:text-link-blue-hover dark:text-link-purple dark:hover:text-link-purple-hover"
+                rel="noopener noreferrer"
+              >
+                Twitter
+              </a>{' '}
               .
             </p>
           </div>
