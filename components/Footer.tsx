@@ -34,7 +34,7 @@ export default function Footer() {
       <button
         aria-label="Toggle Dark Mode"
         type="button"
-        className="w-10 h-10 p-3 bg-gray-200 rounded dark:bg-gray-800"
+        className="w-10 h-10 p-3 bg-gray-200 rounded dark:bg-gray-skills"
         onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
       >
         {mounted && (

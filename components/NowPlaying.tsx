@@ -8,24 +8,24 @@ export default function NowPlaying() {
   const { data } = useSWR<NowPlayingSong>('/api/now-playing', fetcher);
 
   return (
-    <div className="flex items-start p-2 mb-8 border border-gray-300 rounded-lg dark:border-gray-800 w-72">
+    <div className="mb-8 flex w-72 items-start rounded-lg border border-gray-300 p-2 dark:border-[#1a1a1a]">
       <Image
         alt="Spotify"
-        className="rounded-lg w-60 h-60"
+        className="rounded-lg h-60 w-60"
         height={60}
         width={60}
         src={data?.albumImageUrl || '/images/placeholder.jpeg'}
       />
       <div className="flex flex-col items-start justify-center ml-3">
         <a
-          className="w-48 font-medium text-gray-800 truncate dark:text-gray-200 max-w-48"
+          className="w-48 font-medium text-gray-800 truncate max-w-48 dark:text-gray-200"
           href={data?.songUrl}
           target="_blank"
           rel="noopener noreferrer"
         >
           {data?.title ?? 'Not Playing'}
         </a>
-        <p className="w-48 text-gray-500 truncate dark:text-gray-300 max-w-48">
+        <p className="w-48 text-gray-500 truncate max-w-48 dark:text-gray-300">
           {data?.artist ?? 'Spotify'}
         </p>
       </div>
