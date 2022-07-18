@@ -1,5 +1,6 @@
 import Layout from '../components/Layout';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState } from 'react';
 
 function cn(...classes: string[]) {
@@ -19,7 +20,7 @@ export default function About() {
         </h1>
         <br />
         <div className="max-w-2xl md:max-w-3xl">
-          <p className="mx-2 mb-8 text-left text-gray-700 text-md dark:text-gray-400 md:mx-0 md:mb-12 md:text-lg">
+          <p className="mx-2 mb-4 text-left text-gray-700 text-md dark:text-gray-400 md:mx-0 md:mb-8 md:text-lg">
             Hey there! I'm Saurish Srivastava. I'm a rising senior at{' '}
             <a
               href="https://evergreenvalleyhigh.esuhsd.org/"
@@ -28,73 +29,72 @@ export default function About() {
               rel="noopener noreferrer"
             >
               Evergreen Valley High School
-            </a>
-            , located in the capital of the Silicon Valley: San Jose. I love
-            coding and enjoy messing around in different areas of computer
-            science! I'm currently exploring bioinformatics – ranging from
-            medical computer vision to genome sequencing – to understand the
-            intersection of biology and computer science.
-            <br />
-            <br />
-            I'm also an avid debater! I have qualified to the Tournament of
-            Champions in both Varsity Lincoln Douglas and Varsity Public Forum.
-            I read a variety of different{' '}
-            <a
-              href="https://hsld.debatecoaches.org/Evergreen%20Valley/Srivastava%20Neg"
-              target="_blank"
-              className="underline text-link-blue hover:text-link-blue-hover dark:text-link-purple dark:hover:text-link-purple-hover"
-              rel="noopener noreferrer"
-            >
-              arguments
             </a>{' '}
-            and mostly engage in critical literature and philosophical bases.
-            And because I love reading and discussing philosophy, I am the
-            president of{' '}
+            and I'm currently exploring computational neuroscience – ranging
+            from studying metacognition to neuroimaging – to better understand
+            the intersection of neuroscience and computer science. I also enjoy
+            web development, and try to{' '}
+            <Link href="/#projects">
+              <a className="underline text-link-blue hover:text-link-blue-hover dark:text-link-purple dark:hover:text-link-purple-hover">
+                make cool things on the web
+              </a>
+            </Link>{' '}
+            in my freetime.
+          </p>
+          <p className="mx-2 mb-4 text-left text-gray-700 text-md dark:text-gray-400 md:mx-0 md:mb-8 md:text-lg">
+            I lead a few initiatives:{' '}
             <a
-              href="https://dialexicon.org/"
-              target="_blank"
+              href="https://dialexicon.esuhsd.org/"
               className="underline text-link-blue hover:text-link-blue-hover dark:text-link-purple dark:hover:text-link-purple-hover"
+              target="_blank"
               rel="noopener noreferrer"
             >
               Dialexicon
-            </a>{' '}
-            where I organize weekly philosophy discussions,{' '}
-            <a
-              href="https://dialexicon.org/podcast"
-              target="_blank"
-              className="underline text-link-blue hover:text-link-blue-hover dark:text-link-purple dark:hover:text-link-purple-hover"
-              rel="noopener noreferrer"
-            >
-              run a podcast
             </a>
-            , and lead a high school student journal.
-            <br />
-            <br />
-            I’m the president and executive director at{' '}
+            , where I host weekly philosophy discussions and run a philosophy
+            podcast;{' '}
             <a
               href="https://envisionnew.org/"
-              target="_blank"
               className="underline text-link-blue hover:text-link-blue-hover dark:text-link-purple dark:hover:text-link-purple-hover"
+              target="_blank"
               rel="noopener noreferrer"
             >
               Project enVision U.S.
             </a>
-            , a non-profit organization dedicated to the community. Our mission
-            is to create a connected community where education is free and
-            accessible. I'm also the co-founder and director of{' '}
+            , where I'm kickstarting grassroot nonprofits to create a connected
+            community with free and accessible education;{' '}
             <a
               href="https://ataraxiahealth.org/"
-              target="_blank"
               className="underline text-link-blue hover:text-link-blue-hover dark:text-link-purple dark:hover:text-link-purple-hover"
+              target="_blank"
               rel="noopener noreferrer"
             >
               Ataraxia
             </a>
-            , where we have been promoting neurodiversity through digital means,
-            and physically creating mental health and hygiene kits for the
-            homeless populations.
-            <br />
-            <br />
+            , where I help promote neurodiversity, while making hygiene and
+            mental health kits for unhoused populations.
+          </p>
+          <p className="mx-2 mb-8 text-left text-gray-700 text-md dark:text-gray-400 md:mx-0 md:mb-12 md:text-lg">
+            Some of my hobbies include meeting new people on Twitter,
+            volleyball, photography, and debating (qualified to the Tournament
+            of Champions in Lincoln Douglas and Public Forum). If you would like
+            to connect, please shoot me an email at{' '}
+            <a
+              href="mailto:me@saurish.com?subject=Hey from the Website!"
+              className="underline text-link-blue hover:text-link-blue-hover dark:text-link-purple dark:hover:text-link-purple-hover"
+              rel="noopener noreferrer"
+            >
+              me@saurish.com
+            </a>{' '}
+            or via{' '}
+            <a
+              href="https://twitter.com/saurishhh"
+              className="underline text-link-blue hover:text-link-blue-hover dark:text-link-purple dark:hover:text-link-purple-hover"
+              rel="noopener noreferrer"
+            >
+              Twitter
+            </a>
+            .
           </p>
           <div className="mx-2 prose text-center sm:mx-auto">
             <Image

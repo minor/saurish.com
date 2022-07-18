@@ -111,10 +111,10 @@ const FullProjects = () => (
     <Project
       image="/images/uranium"
       glink="https://saurish.gumroad.com/l/uranium"
-      link="https://saurish.gumroad.com/l/uranium"
+      link="https://uranium.saurish.com/"
       title="Uranium"
       index={false}
-      description="Uranium is a premium website template built with Next.js and styled with TailwindCSS. It is beautifully designed and comes with its own type-writer effect with Typed.js."
+      description="Uranium is a free open-sourced website template built with Next.js and styled with TailwindCSS. It is beautifully designed and comes with its own type-writer effect with Typed.js."
     />
     <Project
       image="/images/plutonium"
