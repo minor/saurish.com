@@ -22,7 +22,7 @@ const Divider = () => {
 
 export default function Footer() {
   const [mounted, setMounted] = useState(false);
-  const { theme, setTheme } = useTheme();
+  const { resolvedTheme, setTheme } = useTheme();
 
   // When mounted on client, now we can show the UI
   useEffect(() => setMounted(true), []);
@@ -35,7 +35,7 @@ export default function Footer() {
         aria-label="Toggle Dark Mode"
         type="button"
         className="w-10 h-10 p-3 bg-gray-200 rounded dark:bg-gray-skills"
-        onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+        onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
       >
         {mounted && (
           <svg
@@ -45,7 +45,7 @@ export default function Footer() {
             stroke="currentColor"
             className="w-4 h-4 text-gray-800 dark:text-gray-200"
           >
-            {theme === 'dark' ? (
+            {resolvedTheme === 'dark' ? (
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
